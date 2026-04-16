@@ -32,3 +32,20 @@ private/
 
 # Large local binaries
 opencode/bin/
+
+# Claude runtime data (machine-specific, not portable)
+claude/projects/
+claude/todos/
+claude/sessions/
+claude/session-env/
+claude/history.jsonl
+claude/cache/
+claude/file-history/
+claude/downloads/
+claude/debug/
+claude/statsig/
+claude/shell-snapshots/
+claude/plugins/
+claude/backups/
+claude/.caveman-active
+claude/settings.json.lean-ctx.bak
