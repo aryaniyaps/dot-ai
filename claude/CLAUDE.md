@@ -1,1 +1,0 @@
-/home/aryaniyaps/web-projects/portfolio/AGENTS.md
