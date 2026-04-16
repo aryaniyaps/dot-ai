@@ -17,8 +17,9 @@ Everything is versioned with Git so I can sync my setup across machines like dot
 $HOME/dot-ai
 ├── .claude/       # mirror of ~/.claude
 ├── opencode/      # mirror of ~/.opencode
-├── backup.sh      # one-shot backup script
-└── restore.sh     # one-shot restore script
+├── scripts/
+│   ├── backup.sh  # one-shot backup script
+│   └── restore.sh # one-shot restore script
 ```
 
 ---
@@ -37,14 +38,14 @@ git checkout -b main
 2. Add the scripts (copy `backup.sh` and `restore.sh` into `~/dot-ai`) and make them executable:
 
 ```bash
-chmod +x ~/dot-ai/backup.sh
-chmod +x ~/dot-ai/restore.sh
+chmod +x ~/dot-ai/scripts/backup.sh
+chmod +x ~/dot-ai/scripts/restore.sh
 ```
 
 3. Run an initial backup:
 
 ```bash
-~/dot-ai/backup.sh
+~/dot-ai/scripts/backup.sh
 ```
 
 4. Commit the initial state:
@@ -77,7 +78,7 @@ Now this repo acts as your cloud backup and source of truth. [web:34][web:38]
 Whenever you tweak Claude Code or OpenCode settings, skills, or agents:
 
 ```bash
-~/dot-ai/backup.sh
+~/dot-ai/scripts/backup.sh
 git push
 ```
 
@@ -96,7 +97,7 @@ On a fresh machine:
 ```bash
 git clone git@github.com:<your-username>/dot-ai.git ~/dot-ai
 cd ~/dot-ai
-./restore.sh
+./scripts/restore.sh
 ```
 
 The script:
