@@ -7,7 +7,7 @@ This repo stores the config for:
 - Claude Code (`~/.claude`)
 - OpenCode (`~/.opencode`)
 
-Everything is versioned with Git so I can sync my setup across machines like dotfiles. [web:34][web:39]
+Everything is versioned with Git so I can sync my setup across machines like dotfiles.
 
 ---
 
@@ -140,7 +140,6 @@ Whenever you tweak Claude Code or OpenCode settings, skills, or agents:
 
 ```bash
 ~/dot-ai/scripts/backup.sh
-git push
 ```
 
 The script:
@@ -173,7 +172,6 @@ Then restart your editor / agents and you should have the same setup.
 
 ## Security notes
 
-- Keep this repo **private**; your agent configs may contain paths, history, or sensitive context. [web:38]
 - Do **not** store API keys or secrets directly in these folders.
   - Prefer `.env` files, OS keychains, or a separate secrets manager.
 - If you must store any config with tokens, add them to `.gitignore` before committing. [web:38]
