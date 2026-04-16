@@ -1,0 +1,43 @@
+{
+  "superpowers-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "obra/superpowers-marketplace"
+    },
+    "installLocation": "/home/aryaniyaps/.claude/plugins/marketplaces/superpowers-marketplace",
+    "lastUpdated": "2025-11-28T12:13:48.978Z"
+  },
+  "neon": {
+    "source": {
+      "source": "github",
+      "repo": "neondatabase-labs/ai-rules"
+    },
+    "installLocation": "/home/aryaniyaps/.claude/plugins/marketplaces/neon",
+    "lastUpdated": "2025-11-30T04:05:07.833Z"
+  },
+  "impeccable": {
+    "source": {
+      "source": "github",
+      "repo": "pbakaus/impeccable"
+    },
+    "installLocation": "/home/aryaniyaps/.claude/plugins/marketplaces/impeccable",
+    "lastUpdated": "2026-03-25T14:51:39.150Z"
+  },
+  "caveman": {
+    "source": {
+      "source": "github",
+      "repo": "JuliusBrussee/caveman"
+    },
+    "installLocation": "/home/aryaniyaps/.claude/plugins/marketplaces/caveman",
+    "lastUpdated": "2026-04-13T12:20:17.222Z"
+  },
+  "thedotmack": {
+    "source": {
+      "source": "github",
+      "repo": "thedotmack/claude-mem"
+    },
+    "installLocation": "/home/aryaniyaps/.claude/plugins/marketplaces/thedotmack",
+    "lastUpdated": "2026-04-15T09:00:52.241Z",
+    "autoUpdate": true
+  }
+}

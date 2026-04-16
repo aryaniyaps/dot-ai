@@ -1,0 +1,161 @@
+'use client';
+
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+
+export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1500));
+
+    // TODO: Implement actual form submission
+    alert('Message sent! (This is a demo - implement actual submission)');
+    setIsSubmitting(false);
+    setFormData({ name: '', email: '', message: '' });
+  };
+
+  return (
+    <div className="min-h-screen bg-holo-bg py-20">
+      <div className="fixed inset-0 opacity-10" style={{
+        backgroundImage: `
+          linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px)
+        `,
+        backgroundSize: '50px 50px',
+      }} />
+
+      <div className="relative z-10 container mx-auto px-6 max-w-2xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="text-5xl md:text-6xl font-heading mb-8 text-gradient-holographic text-center">
+            Get In Touch
+          </h1>
+
+          <p className="text-center text-holo-text opacity-80 mb-12">
+            Building something interesting? Let&apos;s talk.
+          </p>
+
+          {/* Voice Waveform Visualization */}
+          <div className="flex justify-center items-end gap-1 mb-12 h-16">
+            {[...Array(20)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="w-1 bg-gradient-to-t from-holo-blue-primary to-holo-teal rounded-full"
+                animate={{
+                  height: [20, 40 + Math.random() * 40, 20],
+                }}
+                transition={{
+                  duration: 0.5 + Math.random() * 0.5,
+                  repeat: Infinity,
+                  delay: i * 0.1,
+                  ease: 'easeInOut',
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Contact Form */}
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label htmlFor="name" className="block text-sm font-mono text-holo-green mb-2">
+                NAME
+              </label>
+              <input
+                type="text"
+                id="name"
+                required
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className="w-full px-4 py-3 bg-holo-bg border border-holo-blue-primary/30 rounded-lg focus:border-holo-blue-primary focus:outline-none focus:ring-2 focus:ring-holo-blue-primary/20 text-holo-text"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="block text-sm font-mono text-holo-green mb-2">
+                EMAIL
+              </label>
+              <input
+                type="email"
+                id="email"
+                required
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                className="w-full px-4 py-3 bg-holo-bg border border-holo-blue-primary/30 rounded-lg focus:border-holo-blue-primary focus:outline-none focus:ring-2 focus:ring-holo-blue-primary/20 text-holo-text"
+                placeholder="your@email.com"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="message" className="block text-sm font-mono text-holo-green mb-2">
+                MESSAGE
+              </label>
+              <textarea
+                id="message"
+                required
+                rows={6}
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                className="w-full px-4 py-3 bg-holo-bg border border-holo-blue-primary/30 rounded-lg focus:border-holo-blue-primary focus:outline-none focus:ring-2 focus:ring-holo-blue-primary/20 text-holo-text resize-none"
+                placeholder="Tell me about your project..."
+              />
+            </div>
+
+            <motion.button
+              type="submit"
+              disabled={isSubmitting}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full px-8 py-4 bg-gradient-playful text-white font-heading font-bold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isSubmitting ? (
+                <span className="flex items-center justify-center gap-2">
+                  <motion.div
+                    className="w-4 h-4 border-2 border-white border-t-transparent rounded-full"
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+                  />
+                  Sending...
+                </span>
+              ) : (
+                'Send Message'
+              )}
+            </motion.button>
+          </form>
+
+          {/* Social Links */}
+          <div className="mt-12 pt-8 border-t border-holo-blue-primary/20">
+            <p className="text-center text-sm text-holo-text opacity-60 mb-4">
+              Or find me on
+            </p>
+            <div className="flex justify-center gap-6">
+              {['GitHub', 'LinkedIn', 'Twitter'].map((social) => (
+                <motion.a
+                  key={social}
+                  href="#"
+                  whileHover={{ scale: 1.1, color: '#00F0FF' }}
+                  className="text-holo-text opacity-70 hover:opacity-100 transition-opacity"
+                >
+                  {social}
+                </motion.a>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+}

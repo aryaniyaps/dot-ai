@@ -1,0 +1,32 @@
+import { z } from 'zod';
+
+/**
+ * Zod schema for blog post frontmatter validation
+ * Enforces required fields and validates formats at build time
+ */
+
+export const blogPostSchema = z.object({
+  title: z.string().min(1, 'Title is required').max(200, 'Title too long'),
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date must be YYYY-MM-DD format'),
+  tags: z.array(z.string()).min(1, 'At least one tag is required').max(10, 'Too many tags'),
+  excerpt: z.string().min(1, 'Excerpt is required').max(500, 'Excerpt too long'),
+  featured: z.boolean().default(false),
+  slug: z.string().optional(),
+});
+
+export type BlogPostFrontmatter = z.infer<typeof blogPostSchema>;
+
+/**
+ * Validate blog post frontmatter
+ * Throws ZodError if invalid
+ */
+export function validateBlogFrontmatter(data: unknown): BlogPostFrontmatter {
+  return blogPostSchema.parse(data);
+}
+
+/**
+ * Safe validation - returns result instead of throwing
+ */
+export function validateBlogFrontmatterSafe(data: unknown) {
+  return blogPostSchema.safeParse(data);
+}

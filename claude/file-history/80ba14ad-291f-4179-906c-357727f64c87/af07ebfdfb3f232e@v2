@@ -1,0 +1,128 @@
+import { test, expect } from '@playwright/test';
+
+test.describe('Visual Regression Tests', () => {
+  test('homepage - desktop has WebGL ArcReactor', async ({ page }) => {
+    await page.goto('/', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(3000); // Allow WebGL to initialize
+
+    // Screenshot and save (no animations wait)
+    await page.screenshot({
+      path: 'test-results/screenshots/homepage-desktop.png',
+      fullPage: true,
+      animations: 'allow',
+    });
+
+    // Verify WebGL canvas exists
+    const canvas = page.locator('canvas').first();
+    await expect(canvas).toBeVisible({ timeout: 5000 });
+
+    // Verify holographic elements are present
+    await expect(page.locator('text=Aryan Iyappan')).toBeVisible();
+    await expect(page.locator('text=Technical Founder building AI-powered developer tools')).toBeVisible();
+  });
+
+  test('homepage - mobile uses CSS fallback', async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 667 });
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(1000);
+
+    await page.screenshot({
+      path: 'test-results/screenshots/homepage-mobile.png',
+      fullPage: true,
+    });
+  });
+
+  test('projects page', async ({ page }) => {
+    await page.goto('/projects');
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(1000);
+
+    await page.screenshot({
+      path: 'test-results/screenshots/projects-desktop.png',
+      fullPage: true,
+    });
+
+    // Verify project cards exist
+    const cards = page.locator('[class*="HolographicCard"]');
+    await expect(cards).toHaveCount(6);
+  });
+
+  test('about page', async ({ page }) => {
+    await page.goto('/about');
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(1000);
+
+    await page.screenshot({
+      path: 'test-results/screenshots/about-desktop.png',
+      fullPage: true,
+    });
+
+    // Verify key sections
+    await expect(page.locator('text=About Me')).toBeVisible();
+    await expect(page.locator('text=Key Achievements')).toBeVisible();
+  });
+
+  test('blog page', async ({ page }) => {
+    await page.goto('/blog');
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(1000);
+
+    await page.screenshot({
+      path: 'test-results/screenshots/blog-desktop.png',
+      fullPage: true,
+    });
+
+    // Verify blog posts exist
+    const posts = page.locator('article');
+    await expect(posts).toHaveCount(8);
+  });
+
+  test('contact page', async ({ page }) => {
+    await page.goto('/contact');
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(1000);
+
+    await page.screenshot({
+      path: 'test-results/screenshots/contact-desktop.png',
+      fullPage: true,
+    });
+
+    // Verify contact form
+    await expect(page.locator('input[name="name"]')).toBeVisible();
+    await expect(page.locator('input[name="email"]')).toBeVisible();
+    await expect(page.locator('textarea[name="message"]')).toBeVisible();
+  });
+
+  test('navigation works on all pages', async ({ page }) => {
+    const pages = ['/', '/projects', '/about', '/blog', '/contact'];
+
+    for (const url of pages) {
+      await page.goto(url);
+      await page.waitForLoadState('networkidle');
+
+      // Verify navigation is visible (use first() to avoid strict mode violations)
+      await expect(page.locator('nav >> text=Home').first()).toBeVisible();
+      await expect(page.locator('nav >> text=Projects').first()).toBeVisible();
+      await expect(page.locator('nav >> text=About').first()).toBeVisible();
+      await expect(page.locator('nav >> text=Contact').first()).toBeVisible();
+    }
+  });
+
+  test('Quick Pitch modal opens', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(2000);
+
+    // Click Quick Pitch button
+    await page.locator('button:has-text("Quick Pitch")').click();
+    await page.waitForTimeout(500);
+
+    // Verify modal is open
+    await expect(page.locator('text=What I\'m Building')).toBeVisible();
+
+    await page.screenshot({
+      path: 'test-results/screenshots/quick-pitch-modal.png',
+    });
+  });
+});

@@ -1,0 +1,85 @@
+import { isMobile, isWebGLSupported, getDeviceInfo, isLowEndDevice } from '../deviceDetection';
+
+describe('deviceDetection', () => {
+  describe('isMobile', () => {
+    beforeEach(() => {
+      // Reset window.innerWidth before each test
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 1024,
+      });
+    });
+
+    it('returns false for desktop screen width', () => {
+      expect(isMobile()).toBe(false);
+    });
+
+    it('returns true for mobile screen width', () => {
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 375,
+      });
+      expect(isMobile()).toBe(true);
+    });
+
+    it('returns true when user agent contains "Mobi"', () => {
+      Object.defineProperty(window, 'navigator', {
+        writable: true,
+        value: { userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)' },
+      });
+      expect(isMobile()).toBe(true);
+    });
+
+    it('returns true when user agent contains "Android"', () => {
+      Object.defineProperty(window, 'navigator', {
+        writable: true,
+        value: { userAgent: 'Mozilla/5.0 (Linux; Android 10)' },
+      });
+      expect(isMobile()).toBe(true);
+    });
+  });
+
+  describe('isWebGLSupported', () => {
+    it('returns true when WebGL context is available', () => {
+      const mockCanvas = document.createElement('canvas');
+      const mockGL = {};
+      jest.spyOn(mockCanvas, 'getContext').mockReturnValue(mockGL as any);
+
+      expect(isWebGLSupported()).toBe(true);
+    });
+
+    it('returns false when WebGL context is not available', () => {
+      const mockCanvas = document.createElement('canvas');
+      jest.spyOn(mockCanvas, 'getContext').mockReturnValue(null);
+
+      expect(isWebGLSupported()).toBe(false);
+    });
+  });
+
+  describe('getDeviceInfo', () => {
+    it('returns device information', () => {
+      const info = getDeviceInfo();
+
+      expect(info).toHaveProperty('isMobile');
+      expect(info).toHaveProperty('isWebGLSupported');
+      expect(info).toHaveProperty('hardwareConcurrency');
+      expect(info.hardwareConcurrency).toBe(4);
+    });
+  });
+
+  describe('isLowEndDevice', () => {
+    it('returns true for devices with 4 or fewer cores', () => {
+      expect(isLowEndDevice()).toBe(true);
+    });
+
+    it('returns false for devices with more than 4 cores', () => {
+      Object.defineProperty(navigator, 'hardwareConcurrency', {
+        writable: true,
+        value: 8,
+      });
+      expect(isLowEndDevice()).toBe(false);
+    });
+  });
+});

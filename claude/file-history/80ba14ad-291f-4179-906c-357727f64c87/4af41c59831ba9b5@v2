@@ -1,0 +1,89 @@
+'use client';
+
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+
+interface HolographicCardProps {
+  title: string;
+  description: string;
+  founderPerspective: string;
+  techStack: string[];
+  deepDiveLink?: string;
+  className?: string;
+}
+
+/**
+ * Holographic card component with 3D tilt effect (desktop) and static fallback (mobile)
+ */
+export default function HolographicCard({
+  title,
+  description,
+  founderPerspective,
+  techStack,
+  deepDiveLink,
+  className = '',
+}: HolographicCardProps) {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+    setMousePosition({ x, y });
+  };
+
+  const transformStyle = {
+    transform: isHovered
+      ? `perspective(1000px) rotateX(${-mousePosition.y}deg) rotateY(${mousePosition.x}deg) scale3d(1.02, 1.02, 1.02)`
+      : 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)',
+    transition: isHovered ? 'none' : 'all 0.3s ease-out',
+  };
+
+  return (
+    <motion.div
+      className={`bg-holo-bg/50 backdrop-blur border border-holo-blue-primary/30 rounded-lg p-6 cursor-pointer ${className}`}
+      style={transformStyle}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        setMousePosition({ x: 0, y: 0 });
+      }}
+      whileHover={{ boxShadow: '0 0 30px rgba(0, 212, 255, 0.3)' }}
+    >
+      <h3 className="text-2xl font-heading mb-2 text-holo-blue-primary">{title}</h3>
+
+      <p className="text-holo-text mb-4">{description}</p>
+
+      {/* Founder perspective */}
+      <div className="border-l-2 border-holo-coral pl-4 mb-4">
+        <p className="text-sm text-holo-coral italic">
+          &quot;{founderPerspective}&quot;
+        </p>
+      </div>
+
+      {/* Tech stack tags */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        {techStack.map((tech) => (
+          <span
+            key={tech}
+            className="px-3 py-1 bg-holo-blue-primary/10 text-holo-blue-primary text-sm font-mono rounded"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+
+      {/* Deep dive link */}
+      {deepDiveLink && (
+        <a
+          href={deepDiveLink}
+          className="text-holo-teal hover:text-holo-blue-secondary font-mono text-sm"
+        >
+          → Deep dive
+        </a>
+      )}
+    </motion.div>
+  );
+}

@@ -1,0 +1,355 @@
+#!/usr/bin/env python3
+"""
+Polymarket Cricket T20 Hypothesis Testing
+Tests specific hypotheses about market inefficiencies and patterns
+"""
+
+import pandas as pd
+import numpy as np
+from pathlib import Path
+from datetime import datetime
+from scipy import stats
+
+print("=" * 70)
+print("Polymarket Cricket T20 - Hypothesis Testing")
+print("=" * 70)
+
+# ============================================================================
+# Load Data
+# ============================================================================
+print("\n📂 Loading full dataset...")
+
+data_dir = Path('data')
+csv_files = sorted(data_dir.glob('polymarket_cricket_t20_poc_*.csv'))
+
+if not csv_files:
+    print("❌ No data files found. Run run_analysis.py first.")
+    exit(1)
+
+# Load most recent file
+df = pd.read_csv(csv_files[-1])
+print(f"✅ Loaded {len(df)} markets from {csv_files[-1].name}")
+
+# Parse outcome prices
+def parse_outcome_prices(prices_str):
+    """Parse outcome prices string to list of floats"""
+    try:
+        if pd.isna(prices_str) or prices_str == '[]' or prices_str == '':
+            return []
+        prices_str = str(prices_str).strip()
+        if prices_str.startswith('[') and prices_str.endswith(']'):
+            prices_str = prices_str[1:-1]
+            prices = []
+            for x in prices_str.split(','):
+                x = x.strip().strip("'").strip('"')
+                if x:
+                    prices.append(float(x))
+            return prices
+        return []
+    except:
+        return []
+
+df['outcome_prices_parsed'] = df['outcome_prices'].apply(parse_outcome_prices)
+df['winner_price'] = df['outcome_prices_parsed'].apply(lambda x: max(x) if x else np.nan)
+df['loser_price'] = df['outcome_prices_parsed'].apply(lambda x: min(x) if x else np.nan)
+df['end_date_parsed'] = pd.to_datetime(df['end_date'])
+
+print(f"✅ Parsed outcome prices")
+
+# ============================================================================
+# HYPOTHESIS 1: Market Inefficiency at Close
+# ============================================================================
+print("\n" + "=" * 70)
+print("HYPOTHESIS 1: Market Inefficiency at Close")
+print("=" * 70)
+print("\n📊 Hypothesis: Markets are not perfectly efficient at close.")
+print("   If true, some winners will close < 100¢, creating arbitrage opportunities.")
+
+# Analyze winner closing prices
+winners_below_100 = df[df['winner_price'] < 1.0]
+winners_below_98 = df[df['winner_price'] < 0.98]
+winners_below_95 = df[df['winner_price'] < 0.95]
+
+print(f"\n   Results:")
+print(f"   - Total markets: {len(df)}")
+print(f"   - Winners closing < 100¢: {len(winners_below_100)} ({len(winners_below_100)/len(df)*100:.1f}%)")
+print(f"   - Winners closing < 98¢: {len(winners_below_98)} ({len(winners_below_98)/len(df)*100:.1f}%)")
+print(f"   - Winners closing < 95¢: {len(winners_below_95)} ({len(winners_below_95)/len(df)*100:.1f}%)")
+
+avg_winner_price = df['winner_price'].mean()
+print(f"\n   Average winner closing price: {avg_winner_price:.4f} ({avg_winner_price*100:.2f}¢)")
+
+# Statistical significance test
+# H0: Average winner price = 1.0 (efficient)
+# H1: Average winner price < 1.0 (inefficient)
+t_stat, p_value = stats.ttest_1samp(df['winner_price'].dropna(), 1.0)
+
+print(f"\n   Statistical Test (one-sample t-test):")
+print(f"   - H0: Mean winner price = 1.0 (efficient)")
+print(f"   - H1: Mean winner price < 1.0 (inefficient)")
+print(f"   - t-statistic: {t_stat:.4f}")
+print(f"   - p-value: {p_value/2:.6f} (one-tailed)")  # Divide by 2 for one-tailed
+
+alpha = 0.05
+if p_value/2 < alpha and t_stat < 0:
+    print(f"   ✅ RESULT: Reject H0 - Markets are INEFFICIENT at 95% confidence")
+    inefficiency_detected = True
+else:
+    print(f"   ❌ RESULT: Cannot reject H0 - No evidence of inefficiency")
+    inefficiency_detected = False
+
+# Examples of inefficient closes
+if len(winners_below_98) > 0:
+    print(f"\n   📋 Sample inefficient closes (< 98¢):")
+    sample_inefficient = winners_below_98.nsmallest(5, 'winner_price')[
+        ['event_title', 'volume', 'winner_price', 'loser_price']
+    ]
+    for idx, row in sample_inefficient.iterrows():
+        print(f"      {row['event_title'][:55]:55s} | ${row['volume']:>8,.2f} | {row['winner_price']*100:>5.2f}¢")
+
+# ============================================================================
+# HYPOTHESIS 2: Volume Predicts Resolution Accuracy
+# ============================================================================
+print("\n" + "=" * 70)
+print("HYPOTHESIS 2: Volume Predicts Resolution Accuracy")
+print("=" * 70)
+print("\n📊 Hypothesis: High-volume markets resolve more accurately.")
+print("   If true, high-volume markets should have winners closer to 100¢.")
+
+# Create volume quartiles
+df['volume_quartile'] = pd.qcut(df['volume'], q=4, labels=['Q1 (Low)', 'Q2', 'Q3', 'Q4 (High)'])
+
+# Analyze winner price by volume quartile
+volume_accuracy = df.groupby('volume_quartile').agg({
+    'winner_price': ['mean', 'std', 'count'],
+    'volume': 'mean'
+}).round(4)
+
+print(f"\n   Winner Price by Volume Quartile:")
+print(f"   {volume_accuracy}")
+
+# Correlation between volume and winner price
+correlation = df['volume'].corr(df['winner_price'])
+print(f"\n   Correlation (volume vs winner price): {correlation:.4f}")
+
+if abs(correlation) > 0.1:
+    print(f"   ✅ RESULT: Moderate correlation detected")
+else:
+    print(f"   ❌ RESULT: No significant correlation")
+
+# ============================================================================
+# HYPOTHESIS 3: Underdog Performance
+# ============================================================================
+print("\n" + "=" * 70)
+print("HYPOTHESIS 3: Underdog Performance Analysis")
+print("=" * 70)
+print("\n📊 Hypothesis: Underdogs are overvalued or undervalued.")
+print("   If underdogs win more often than implied, there's value betting on them.")
+
+# Calculate implied probabilities (at close)
+# For binary markets: winner_price + loser_price should = 1.0
+# If winner_price < 1.0, the market was pricing in uncertainty
+
+df['implied_prob'] = df['winner_price']
+df['was_favorite'] = df['winner_price'] >= 0.5
+df['was_strong_favorite'] = df['winner_price'] >= 0.9
+
+favorites_won = df['was_favorite'].sum()
+underdogs_won = (~df['was_favorite']).sum()
+
+print(f"\n   Outcome Analysis:")
+print(f"   - Favorites (≥50¢) won: {favorites_won} ({favorites_won/len(df)*100:.1f}%)")
+print(f"   - Underdogs (<50¢) won: {underdogs_won} ({underdogs_won/len(df)*100:.1f}%)")
+
+# Analyze underdogs that won
+underdog_winners = df[~df['was_favorite']]
+if len(underdog_winners) > 0:
+    print(f"\n   📋 Underdog Winners (Expected to lose but won):")
+    print(f"      {'Event':<50} | {'Volume':>10} | {'Winner Price':>12}")
+    print(f"      {'-'*50} | {'-'*10} | {'-'*12}")
+    for idx, row in underdog_winners.nlargest(10, 'volume').iterrows():
+        print(f"      {row['event_title'][:50]:<50} | ${row['volume']:>8,.2f} | {row['winner_price']*100:>10.2f}¢")
+
+# ============================================================================
+# HYPOTHESIS 4: Temporal Patterns
+# ============================================================================
+print("\n" + "=" * 70)
+print("HYPOTHESIS 4: Temporal Patterns")
+print("=" * 70)
+print("\n📊 Hypothesis: Market efficiency varies by time.")
+
+df['hour'] = df['end_date_parsed'].dt.hour
+df['day_of_week'] = df['end_date_parsed'].dt.dayofweek
+df['is_weekend'] = df['day_of_week'] >= 5
+
+# Efficiency by hour
+hourly_efficiency = df.groupby('hour').agg({
+    'winner_price': 'mean',
+    'market_id': 'count'
+}).round(4)
+
+print(f"\n   Average Winner Price by Hour (UTC):")
+print(f"   {hourly_efficiency}")
+
+# Efficiency by weekend
+weekday_avg = df[~df['is_weekend']]['winner_price'].mean()
+weekend_avg = df[df['is_weekend']]['winner_price'].mean()
+
+print(f"\n   Weekday avg winner price: {weekday_avg:.4f} ({weekday_avg*100:.2f}¢)")
+print(f"   Weekend avg winner price: {weekend_avg:.4f} ({weekend_avg*100:.2f}¢)")
+
+# ============================================================================
+# HYPOTHESIS 5: League-Specific Efficiency
+# ============================================================================
+print("\n" + "=" * 70)
+print("HYPOTHESIS 5: League-Specific Efficiency")
+print("=" * 70)
+print("\n📊 Hypothesis: Different leagues have different efficiency levels.")
+
+# Classify by league keywords
+def classify_league(title):
+    title_lower = title.lower()
+    if 'ipl' in title_lower:
+        return 'IPL'
+    elif 'world cup' in title_lower or 'wc' in title_lower:
+        return 'World Cup'
+    elif 'psl' in title_lower:
+        return 'PSL'
+    elif 't20' in title_lower:
+        return 'T20'
+    else:
+        return 'Other'
+
+df['league'] = df['event_title'].apply(classify_league)
+
+league_efficiency = df.groupby('league').agg({
+    'winner_price': ['mean', 'std', 'count'],
+    'volume': 'mean'
+}).round(4)
+
+print(f"\n   Market Efficiency by League:")
+print(f"   {league_efficiency}")
+
+# ============================================================================
+# Paper Trading Strategy
+# ============================================================================
+print("\n" + "=" * 70)
+print("PAPER TRADING STRATEGY: Buy Winners Below 100¢")
+print("=" * 70)
+print("\n💡 Strategy: If winner closes < 100¢, buy at close and hold to resolution.")
+print("   This exploits market inefficiency at close.")
+
+inefficient_markets = df[df['winner_price'] < 1.0].copy()
+
+if len(inefficient_markets) > 0:
+    # Calculate returns
+    # Buy at winner_price, sell at 1.0 (100¢)
+    inefficient_markets['return'] = (1.0 - inefficient_markets['winner_price']) / inefficient_markets['winner_price']
+
+    total_markets = len(inefficient_markets)
+    avg_return = inefficient_markets['return'].mean()
+    total_return = inefficient_markets['return'].sum()
+
+    print(f"\n   📊 Paper Trading Results ({total_markets} markets):")
+    print(f"   - Average return per trade: {avg_return*100:.2f}%")
+    print(f"   - Total return (if compounded): {total_return*100:.2f}%")
+
+    # Best trades
+    print(f"\n   🎯 Best Opportunities:")
+    best_trades = inefficient_markets.nlargest(5, 'return')[
+        ['event_title', 'winner_price', 'return', 'volume']
+    ]
+    for idx, row in best_trades.iterrows():
+        print(f"      {row['event_title'][:50]:<50} | Buy@{row['winner_price']*100:>5.2f}¢ | Return: {row['return']*100:>5.2f}%")
+
+    # Risk analysis
+    losing_trades = (inefficient_markets['return'] < 0).sum()
+    print(f"\n   ⚠️  Risk Analysis:")
+    print(f"   - Winning trades: {total_markets - losing_trades}")
+    print(f"   - Losing trades: {losing_trades}")
+    print(f"   - Win rate: {(total_markets - losing_trades)/total_markets*100:.1f}%")
+
+else:
+    print(f"\n   ❌ No inefficient closes found - strategy not applicable")
+
+# ============================================================================
+# SUMMARY
+# ============================================================================
+print("\n" + "=" * 70)
+print("HYPOTHESIS TESTING SUMMARY")
+print("=" * 70)
+
+findings = []
+
+# Hypothesis 1
+if inefficiency_detected:
+    findings.append({
+        'hypothesis': 'Market Inefficiency at Close',
+        'result': '✅ CONFIRMED',
+        'detail': f'{len(winners_below_100)} markets ({len(winners_below_100)/len(df)*100:.1f}%) closed below 100¢'
+    })
+else:
+    findings.append({
+        'hypothesis': 'Market Inefficiency at Close',
+        'result': '❌ REJECTED',
+        'detail': 'Markets appear efficient at close'
+    })
+
+# Hypothesis 2
+if abs(correlation) > 0.1:
+    findings.append({
+        'hypothesis': 'Volume Predicts Accuracy',
+        'result': '✅ CONFIRMED',
+        'detail': f'Correlation: {correlation:.4f}'
+    })
+else:
+    findings.append({
+        'hypothesis': 'Volume Predicts Accuracy',
+        'result': '❌ REJECTED',
+        'detail': f'Weak correlation: {correlation:.4f}'
+    })
+
+# Hypothesis 3
+findings.append({
+    'hypothesis': 'Underdog Performance',
+    'result': '📊 DATA',
+    'detail': f'{underdogs_won} underdogs won ({underdogs_won/len(df)*100:.1f}%)'
+})
+
+print("\n   Key Findings:")
+for i, finding in enumerate(findings, 1):
+    print(f"   {i}. {finding['hypothesis']}")
+    print(f"      {finding['result']}: {finding['detail']}")
+
+# ============================================================================
+# RECOMMENDATION
+# ============================================================================
+print("\n" + "=" * 70)
+print("RECOMMENDATION")
+print("=" * 70)
+
+if inefficiency_detected:
+    print("\n   ⚠️  MARKET INEFFICIENCY DETECTED")
+    print(f"   - {len(winners_below_100)} markets closed below 100¢")
+    print(f"   - Average winner price: {avg_winner_price*100:.2f}¢")
+    print(f"   - Paper trading strategy shows potential")
+    print("\n   🎯 RECOMMENDED ACTIONS:")
+    print(f"   1. Investigate why {len(winners_below_100)} markets closed inefficiently")
+    print(f"   2. Check if these are timing errors or genuine mispricing")
+    print(f"   3. Paper trade strategy: Buy winners closing < 98¢")
+    print(f"   4. Monitor new markets for similar patterns")
+    go_ahead = True
+else:
+    print("\n   ✅ MARKETS APPEAR EFFICIENT")
+    print(f"   - No significant inefficiencies detected")
+    print(f"   - Paper trading not recommended")
+    print("\n   🎯 RECOMMENDED ACTIONS:")
+    print(f"   1. Consider alternative markets")
+    print(f"   2. Look for intraday inefficiencies (not captured in close data)")
+    print(f"   3. Explore other sports or prediction types")
+    go_ahead = False
+
+print("\n" + "=" * 70)
+print("🎉 Hypothesis testing complete!")
+print("=" * 70)
+print()

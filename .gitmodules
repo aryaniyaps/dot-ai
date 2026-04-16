@@ -1,0 +1,21 @@
+[submodule "claude/plugins/marketplaces/caveman"]
+	path = claude/plugins/marketplaces/caveman
+	url = https://github.com/JuliusBrussee/caveman.git
+[submodule "claude/plugins/marketplaces/impeccable"]
+	path = claude/plugins/marketplaces/impeccable
+	url = https://github.com/pbakaus/impeccable.git
+[submodule "claude/plugins/marketplaces/neon"]
+	path = claude/plugins/marketplaces/neon
+	url = https://github.com/neondatabase-labs/ai-rules.git
+[submodule "claude/plugins/marketplaces/superpowers-marketplace"]
+	path = claude/plugins/marketplaces/superpowers-marketplace
+	url = https://github.com/obra/superpowers-marketplace.git
+[submodule "claude/plugins/marketplaces/thedotmack"]
+	path = claude/plugins/marketplaces/thedotmack
+	url = https://github.com/thedotmack/claude-mem.git
+[submodule "claude/skills/gstack"]
+	path = claude/skills/gstack
+	url = https://github.com/garrytan/gstack.git
+[submodule "claude/skills/gstack.bak"]
+	path = claude/skills/gstack.bak
+	url = https://github.com/garrytan/gstack.git

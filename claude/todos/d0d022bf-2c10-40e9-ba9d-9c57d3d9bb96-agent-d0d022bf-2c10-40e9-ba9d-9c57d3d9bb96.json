@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Create the sticky-scroll-reveal UI component based on Aceternity design",
+    "status": "completed",
+    "activeForm": "Creating sticky-scroll-reveal UI component"
+  },
+  {
+    "content": "Refactor PainPointsSection to use the new sticky scroll component with proper sections",
+    "status": "completed",
+    "activeForm": "Refactoring PainPointsSection with sticky scroll"
+  },
+  {
+    "content": "Test the implementation and ensure smooth scrolling behavior",
+    "status": "in_progress",
+    "activeForm": "Testing sticky scroll implementation"
+  }
+]

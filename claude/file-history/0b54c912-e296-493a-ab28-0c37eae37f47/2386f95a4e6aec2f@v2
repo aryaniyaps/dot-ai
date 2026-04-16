@@ -1,0 +1,5 @@
+#!/bin/bash
+TIMESTAMP=$(date +%s)
+curl -s -X POST http://localhost:5000/api/lti/launch \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "oauth_consumer_key=moodle&oauth_timestamp=${TIMESTAMP}&oauth_signature_method=HMAC-SHA1&oauth_version=1.0&oauth_nonce=testnonce${TIMESTAMP}&oauth_signature=test&user_id=1&context_id=testcourse&resource_link_id=testresource&roles=Learner&lis_person_contact_email_primary=test@example.com&lis_person_name_full=Test+User"

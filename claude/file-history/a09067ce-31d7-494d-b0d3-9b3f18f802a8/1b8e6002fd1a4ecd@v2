@@ -1,0 +1,209 @@
+#!/usr/bin/env python3
+"""
+ESPNcricinfo Scraper - Fetch ball-by-ball cricket data
+Prototype to understand ESPNcricinfo's URL structure and data format
+"""
+
+import requests
+from bs4 import BeautifulSoup
+import json
+import re
+from datetime import datetime
+import time
+
+class ESPNcricinfoScraper:
+    def __init__(self):
+        self.session = requests.Session()
+        # Mimic a real browser to avoid bot detection
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'DNT': '1',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Sec-Fetch-User': '?1',
+            'Cache-Control': 'max-age=0',
+        })
+
+    def fetch_live_matches(self):
+        """Fetch all live matches from ESPNcricinfo homepage"""
+        url = "https://www.espncricinfo.com/live-cricket-score"
+        try:
+            response = self.session.get(url, timeout=10)
+            response.raise_for_status()
+
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # Look for match cards/links
+            matches = []
+
+            # Try to find match links - ESPNcricinfo usually has links in specific patterns
+            # Common patterns: /series/series-name-match-id/team1-vs-team2-matchNumber
+            for link in soup.find_all('a', href=True):
+                href = link['href']
+                # Look for match URLs
+                if '/series/' in href and ('vs' in href.lower() or '-vs-' in href):
+                    full_url = href if href.startswith('http') else f"https://www.espncricinfo.com{href}"
+                    if full_url not in matches:
+                        matches.append(full_url)
+
+            return matches[:10]  # Return first 10 matches found
+
+        except Exception as e:
+            print(f"❌ Error fetching live matches: {e}")
+            return []
+
+    def fetch_match_page(self, match_url):
+        """Fetch a specific match page and extract ball-by-ball data"""
+        try:
+            print(f"Fetching: {match_url}")
+            response = self.session.get(match_url, timeout=10)
+            response.raise_for_status()
+
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # Try to find commentary/ball-by-ball section
+            # ESPNcricinfo typically has commentary in specific containers
+
+            # Look for script tags with JSON data (common pattern for modern sites)
+            script_tags = soup.find_all('script', type='application/json')
+            data_found = []
+
+            for script in script_tags:
+                try:
+                    data = json.loads(script.string)
+                    data_found.append(data)
+                except:
+                    pass
+
+            # Look for commentary sections
+            commentary_sections = soup.find_all(['div', 'section'],
+                                                class_=re.compile(r'commentary|ball-by-ball|ballbyball|comm',
+                                                                   re.I))
+
+            return {
+                'url': match_url,
+                'title': soup.title.string if soup.title else 'Unknown',
+                'has_json_data': len(data_found) > 0,
+                'json_data_count': len(data_found),
+                'commentary_sections': len(commentary_sections),
+                'sample_html': str(soup.body)[:1000] if soup.body else ''
+            }
+
+        except Exception as e:
+            print(f"❌ Error fetching match page: {e}")
+            return None
+
+    def test_url_patterns(self):
+        """Test different ESPNcricinfo URL patterns to find what works"""
+        # Common ESPNcricinfo URL patterns based on historical data
+        test_urls = [
+            # Current match format
+            "https://www.espncricinfo.com/series/indian-premier-league-2024-1383804/royal-challengers-bengaluru-vs-chennai-super-kings-68th-match-1419085/full-scorecard",
+
+            # Alternative formats
+            "https://www.espncricinfo.com/series/indian-premier-league-2024-1383804",
+            "https://www.espncricinfo.com/live-cricket-score",
+            "https://www.espncricinfo.com/scores",
+        ]
+
+        results = []
+        for url in test_urls:
+            try:
+                print(f"\n🔍 Testing: {url}")
+                response = self.session.get(url, timeout=10)
+                status = response.status_code
+                print(f"   Status: {status}")
+
+                if status == 200:
+                    # Check if page has useful data
+                    soup = BeautifulSoup(response.content, 'html.parser')
+                    title = soup.title.string if soup.title else 'No title'
+                    print(f"   Title: {title[:100]}")
+
+                    results.append({
+                        'url': url,
+                        'status': status,
+                        'accessible': True,
+                        'title': title
+                    })
+                else:
+                    results.append({
+                        'url': url,
+                        'status': status,
+                        'accessible': False
+                    })
+
+                time.sleep(2)  # Be respectful
+
+            except Exception as e:
+                print(f"   Error: {e}")
+                results.append({
+                    'url': url,
+                    'status': 'ERROR',
+                    'accessible': False,
+                    'error': str(e)
+                })
+
+        return results
+
+def main():
+    """Main testing function"""
+    scraper = ESPNcricinfoScraper()
+
+    print("=" * 100)
+    print("🔍 ESPNcricinfo Scraper - URL Pattern Discovery")
+    print("=" * 100)
+
+    # Test 1: Check if we can access the site at all
+    print("\n📡 Test 1: Accessibility Check")
+    print("-" * 100)
+    results = scraper.test_url_patterns()
+
+    accessible = [r for r in results if r.get('accessible', False)]
+    if accessible:
+        print(f"\n✅ SUCCESS: Can access {len(accessible)} page(s)")
+        for r in accessible:
+            print(f"   - {r['url']}")
+    else:
+        print("\n❌ FAILED: Cannot access any pages")
+        return
+
+    # Test 2: Try to find live matches
+    print("\n📡 Test 2: Finding Live Matches")
+    print("-" * 100)
+    matches = scraper.fetch_live_matches()
+
+    if matches:
+        print(f"\n✅ Found {len(matches)} match URLs:")
+        for i, match in enumerate(matches[:5], 1):
+            print(f"   {i}. {match}")
+    else:
+        print("\n⚠️  No match URLs found from homepage")
+
+    # Test 3: Inspect a match page
+    print("\n📡 Test 3: Match Page Structure")
+    print("-" * 100)
+
+    # Try with a known URL pattern
+    test_match = "https://www.espncricinfo.com/series/indian-premier-league-2024-1383804/royal-challengers-bengaluru-vs-chennai-super-kings-68th-match-1419085/full-scorecard"
+
+    match_data = scraper.fetch_match_page(test_match)
+    if match_data:
+        print(f"\n✅ Successfully fetched match page:")
+        print(f"   Title: {match_data['title']}")
+        print(f"   JSON data blocks: {match_data['json_data_count']}")
+        print(f"   Commentary sections: {match_data['commentary_sections']}")
+        print(f"   HTML preview: {match_data['sample_html'][:200]}...")
+
+    print("\n" + "=" * 100)
+    print("✅ Research Complete")
+    print("=" * 100)
+
+if __name__ == "__main__":
+    main()

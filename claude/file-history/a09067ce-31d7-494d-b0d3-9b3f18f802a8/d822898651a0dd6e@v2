@@ -1,0 +1,155 @@
+#!/usr/bin/env python3
+"""
+Cricbuzz Detailed Inspector - Extract ball-by-ball data structure
+"""
+
+import requests
+from bs4 import BeautifulSoup
+import json
+import re
+
+def inspect_match_page(match_url):
+    """Deep inspection of a Cricbuzz match page to find data structure"""
+
+    session = requests.Session()
+    session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+    })
+
+    print(f"Fetching: {match_url}")
+    response = session.get(match_url, timeout=15)
+    print(f"Status: {response.status_code}\n")
+
+    if response.status_code != 200:
+        return
+
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    # Save full HTML for manual inspection
+    with open('/tmp/cricbuzz_match_page.html', 'w', encoding='utf-8') as f:
+        f.write(str(soup.prettify()))
+    print("✅ Saved full HTML to /tmp/cricbuzz_match_page.html\n")
+
+    # Look for specific patterns
+    print("=" * 100)
+    print("SEARCHING FOR DATA PATTERNS")
+    print("=" * 100)
+
+    # 1. Find all script tags with JSON
+    print("\n1️⃣  Script Tags with Data:")
+    print("-" * 100)
+    for i, script in enumerate(soup.find_all('script'), 1):
+        if script.string and ('commentary' in script.string.lower() or
+                              'ball' in script.string.lower() or
+                              'score' in script.string.lower() or
+                              'over' in script.string.lower() or
+                              'wicket' in script.string.lower()):
+            print(f"\nScript #{i}:")
+            # Extract useful snippets
+            lines = script.string.split('\n')
+            for line in lines[:10]:  # First 10 lines
+                line = line.strip()
+                if line and not line.startswith('//'):
+                    print(f"  {line[:150]}")
+            break
+
+    # 2. Find divs with commentary/score info
+    print("\n2️⃣  Commentary/Score Divs:")
+    print("-" * 100)
+
+    # Look for common class name patterns
+    patterns = [
+        r'commentary', r'ball', r'over', r'wicket', r'score',
+        r'comm', r'ball-by-ball', r'ballbyball', r'overs',
+        r'innings', r'batting', r'bowling'
+    ]
+
+    for pattern in patterns:
+        elements = soup.find_all(['div', 'span', 'section'],
+                               class_=re.compile(pattern, re.I))
+        if elements:
+            print(f"\nPattern '{pattern}': Found {len(elements)} elements")
+            # Show first 3
+            for elem in elements[:3]:
+                classes = ' '.join(elem.get('class', []))
+                text = elem.get_text()[:100].strip()
+                print(f"  class='{classes}'")
+                print(f"  text: {text}")
+                print()
+
+    # 3. Look for JSON data embedded in page
+    print("\n3️⃣  Embedded JSON Data:")
+    print("-" * 100)
+
+    # Search for JSON objects in HTML
+    html_text = str(soup)
+
+    # Look for Next.js data (common in modern React apps)
+    next_data_pattern = r'<script id="__NEXT_DATA__" type="application/json">(.+?)</script>'
+    next_matches = re.findall(next_data_pattern, html_text, re.DOTALL)
+
+    if next_matches:
+        print("✅ Found __NEXT_DATA__ (React/Next.js app data)!")
+        try:
+            data = json.loads(next_matches[0])
+            print(f"   Keys: {list(data.keys())}")
+
+            # Look for commentary or match data
+            if 'props' in data:
+                print(f"   Props keys: {list(data['props'].keys())}")
+
+            # Save to file
+            with open('/tmp/cricbuzz_next_data.json', 'w') as f:
+                json.dump(data, f, indent=2)
+            print("   ✅ Saved to /tmp/cricbuzz_next_data.json")
+
+        except Exception as e:
+            print(f"   Error parsing: {e}")
+
+    # 4. Look for API calls
+    print("\n4️⃣  API Endpoints:")
+    print("-" * 100)
+
+    api_patterns = [
+        r'https://[^\s"\']*cricbuzz[^\s"\']*api[^\s"\']*',
+        r'https://[^\s"\']*commentary[^\s"\']*',
+        r'"/api/[^"]+"',
+        r'fetch\(["\']([^"\']+)["\']',
+    ]
+
+    found_apis = set()
+    for pattern in api_patterns:
+        matches = re.findall(pattern, html_text)
+        found_apis.update(matches)
+
+    if found_apis:
+        print(f"Found {len(found_apis)} potential API endpoints:")
+        for api in list(found_apis)[:10]:
+            print(f"  {api}")
+    else:
+        print("No API endpoints found")
+
+    # 5. Extract match metadata
+    print("\n5️⃣  Match Metadata:")
+    print("-" * 100)
+    print(f"Title: {soup.title.string if soup.title else 'N/A'}")
+
+    # Look for score info
+    score_elements = soup.find_all(['div', 'span'],
+                                   class_=re.compile(r'score|wicket|over', re.I))
+    print(f"Score-related elements: {len(score_elements)}")
+
+    # Show some sample score elements
+    for elem in score_elements[:5]:
+        print(f"  {elem.get_text()[:100].strip()}")
+
+if __name__ == "__main__":
+    # Test with a live IPL match
+    match_url = "https://www.cricbuzz.com/live-cricket-scores/149757/kkr-vs-lsg-15th-match-indian-premier-league-2026"
+
+    inspect_match_page(match_url)
+    print("\n" + "=" * 100)
+    print("✅ Inspection complete - Check /tmp/ for saved files")
+    print("=" * 100)

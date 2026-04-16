@@ -1,0 +1,15 @@
+2026-04-15T07:51:19.935Z [DEBUG] Watching for changes in setting files /home/aryaniyaps/.claude/settings.json, /home/aryaniyaps/web-projects/portfolio/.claude/settings.json...
+2026-04-15T07:51:19.957Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-04-15T07:51:19.958Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-04-15T07:51:19.958Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-04-15T07:51:19.958Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-04-15T07:51:19.958Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-04-15T07:51:19.967Z [DEBUG] Loading plugin caveman from source: "./"
+2026-04-15T07:51:19.971Z [DEBUG] Loading plugin impeccable from source: "./"
+2026-04-15T07:51:19.972Z [WARN] Cache corrupted or missing for marketplace thedotmack, re-fetching from source: Invalid cached directory at /home/aryaniyaps/.claude/plugins/marketplaces/thedotmack: missing .claude-plugin/marketplace.json
+2026-04-15T07:51:20.043Z [DEBUG] Git remote URL: https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:51:20.044Z [DEBUG] Parsed repository: aryaniyaps/portfolio from https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:51:20.044Z [DEBUG] Parsed repository: aryaniyaps/portfolio from URL: https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:51:20.044Z [DEBUG] Path /home/aryaniyaps/web-projects/portfolio already tracked for repo aryaniyaps/portfolio
+2026-04-15T07:51:21.398Z [INFO] SSH not configured for GitHub, using HTTPS for thedotmack/claude-mem
+2026-04-15T07:51:21.609Z [INFO] SSH not configured for GitHub, using HTTPS for thedotmack/claude-mem

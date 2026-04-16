@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Get the complete error stack trace to confirm the exact failure point",
+    "status": "pending",
+    "activeForm": "Getting the complete error stack trace"
+  },
+  {
+    "content": "Verify database schema matches Prisma schema file",
+    "status": "pending",
+    "activeForm": "Verifying database schema alignment"
+  },
+  {
+    "content": "Check Auth.js adapter compatibility with current Prisma setup",
+    "status": "pending",
+    "activeForm": "Checking Auth.js adapter compatibility"
+  },
+  {
+    "content": "Create database migration to fix updatedAt constraint",
+    "status": "pending",
+    "activeForm": "Creating database migration fix"
+  },
+  {
+    "content": "Test Google OAuth flow after fixes",
+    "status": "pending",
+    "activeForm": "Testing Google OAuth integration"
+  }
+]

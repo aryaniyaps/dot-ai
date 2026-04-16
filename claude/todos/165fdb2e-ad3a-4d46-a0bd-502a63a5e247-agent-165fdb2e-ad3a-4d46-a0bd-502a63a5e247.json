@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Explore codebase structure to understand API routes organization",
+    "status": "in_progress",
+    "activeForm": "Exploring codebase structure"
+  },
+  {
+    "content": "Create /api/join-waitlist API route",
+    "status": "pending",
+    "activeForm": "Creating waitlist API route"
+  },
+  {
+    "content": "Create cached server function for waitlist count returning 192",
+    "status": "pending",
+    "activeForm": "Creating waitlist count function"
+  },
+  {
+    "content": "Update hardcoded waitlist count to use the new function",
+    "status": "pending",
+    "activeForm": "Updating hardcoded count"
+  }
+]

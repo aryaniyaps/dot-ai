@@ -1,0 +1,581 @@
+2026-04-13T07:48:53.714Z [DEBUG] Watching for changes in setting files /home/aryaniyaps/.claude/settings.json...
+2026-04-13T07:48:53.741Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-04-13T07:48:53.741Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-04-13T07:48:53.741Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-04-13T07:48:53.741Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-04-13T07:48:53.741Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-04-13T07:48:53.757Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066533757
+2026-04-13T07:48:53.757Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:48:53.767Z [DEBUG] Temp file written successfully, size: 12091 bytes
+2026-04-13T07:48:53.767Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:48:53.767Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066533757 to /home/aryaniyaps/.claude.json
+2026-04-13T07:48:53.767Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:48:53.768Z [DEBUG] Loading plugin impeccable from source: "./"
+2026-04-13T07:48:53.770Z [DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+2026-04-13T07:48:53.813Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/aryaniyaps/.claude/skills, project=/home/aryaniyaps/web-projects/portfolio/.claude/skills
+2026-04-13T07:48:53.823Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2026-04-13T07:48:53.832Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-04-13T07:48:53.840Z [DEBUG] Creating shell snapshot for zsh (/usr/bin/zsh)
+2026-04-13T07:48:53.841Z [DEBUG] Looking for shell config file: /home/aryaniyaps/.zshrc
+2026-04-13T07:48:53.841Z [DEBUG] Snapshots directory: /home/aryaniyaps/.claude/shell-snapshots
+2026-04-13T07:48:53.842Z [DEBUG] Creating snapshot at: /home/aryaniyaps/.claude/shell-snapshots/snapshot-zsh-1776066533841-b6oau9.sh
+2026-04-13T07:48:53.842Z [DEBUG] Shell binary exists: true
+2026-04-13T07:48:53.842Z [DEBUG] Execution timeout: 10000ms
+2026-04-13T07:48:53.845Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066533845
+2026-04-13T07:48:53.854Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-04-13T07:48:53.854Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066533845 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:48:53.854Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:48:53.858Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-04-13T07:48:53.858Z [DEBUG] Checking plugin impeccable: skillsPath=none, skillsPaths=1 paths
+2026-04-13T07:48:53.858Z [DEBUG] Attempting to load skills from plugin impeccable skillsPaths: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills
+2026-04-13T07:48:53.858Z [DEBUG] Loading from skillPath: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills for plugin impeccable
+2026-04-13T07:48:53.874Z [DEBUG] Total plugin commands loaded: 0
+2026-04-13T07:48:53.874Z [DEBUG] Registered 0 hooks from 1 plugins
+2026-04-13T07:48:53.876Z [DEBUG] Loaded 39 unique skills (managed: 0, user: 39, project: 0, duplicates removed: 0)
+2026-04-13T07:48:53.876Z [DEBUG] Loaded 21 skills from plugin impeccable custom path: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills
+2026-04-13T07:48:53.876Z [DEBUG] Total plugin skills loaded: 21
+2026-04-13T07:48:53.876Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-04-13T07:48:53.876Z [DEBUG] getSkills returning: 39 skill dir commands, 21 plugin skills
+2026-04-13T07:48:53.876Z [DEBUG] Total plugin agents loaded: 0
+2026-04-13T07:48:53.884Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066533884
+2026-04-13T07:48:53.884Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:48:53.891Z [DEBUG] Temp file written successfully, size: 12091 bytes
+2026-04-13T07:48:53.891Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:48:53.891Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066533884 to /home/aryaniyaps/.claude.json
+2026-04-13T07:48:53.891Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:48:53.900Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-04-13T07:48:53.900Z [DEBUG] Found 1 hook matchers in settings
+2026-04-13T07:48:53.900Z [DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+2026-04-13T07:48:53.915Z [DEBUG] Total LSP servers loaded: 0
+2026-04-13T07:48:53.915Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-04-13T07:48:53.915Z [DEBUG] LSP manager initialized with 0 servers
+2026-04-13T07:48:53.915Z [DEBUG] LSP server manager initialized successfully
+2026-04-13T07:48:53.915Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-04-13T07:48:54.015Z [DEBUG] Git remote URL: null
+2026-04-13T07:48:54.015Z [DEBUG] No git remote URL found
+2026-04-13T07:48:54.015Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-04-13T07:48:54.098Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-04-13T07:48:54.098Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:48:54.098Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-04-13T07:48:54.104Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066534104
+2026-04-13T07:48:54.105Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:48:54.115Z [DEBUG] Temp file written successfully, size: 12091 bytes
+2026-04-13T07:48:54.115Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:48:54.115Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066534104 to /home/aryaniyaps/.claude.json
+2026-04-13T07:48:54.115Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:48:54.135Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-04-13T07:48:54.135Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:48:54.135Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-04-13T07:48:54.144Z [DEBUG] Acquired lock on running version: /home/aryaniyaps/.local/share/claude/versions/2.0.50
+2026-04-13T07:48:54.955Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/aryaniyaps/.local/share/claude/versions/2.0.50)
+2026-04-13T07:48:54.994Z [DEBUG] Shell snapshot created successfully (184911 bytes)
+2026-04-13T07:48:57.063Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:48:57.071Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-04-13T07:48:57.071Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:48:57.071Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-04-13T07:48:59.175Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:48:59.184Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-04-13T07:48:59.184Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:48:59.184Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-04-13T07:49:01.318Z [DEBUG] Hook output does not start with {, treating as plain text
+2026-04-13T07:49:01.425Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066541425
+2026-04-13T07:49:01.425Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:01.434Z [DEBUG] Temp file written successfully, size: 11983 bytes
+2026-04-13T07:49:01.434Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:01.434Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066541425 to /home/aryaniyaps/.claude.json
+2026-04-13T07:49:01.434Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:49:01.442Z [DEBUG] performStartupChecks called
+2026-04-13T07:49:01.442Z [DEBUG] Starting background plugin installations
+2026-04-13T07:49:01.442Z [DEBUG] performBackgroundPluginInstallations called
+2026-04-13T07:49:02.009Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066542009
+2026-04-13T07:49:02.009Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:02.016Z [DEBUG] Temp file written successfully, size: 12091 bytes
+2026-04-13T07:49:02.017Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:02.017Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066542009 to /home/aryaniyaps/.claude.json
+2026-04-13T07:49:02.017Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:49:02.017Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-04-13T07:49:02.256Z [DEBUG] Found 1 enabled plugins
+2026-04-13T07:49:02.256Z [DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+2026-04-13T07:49:02.257Z [DEBUG] Loaded 1 installed plugins from /home/aryaniyaps/.claude/plugins/installed_plugins.json (schema version 1)
+2026-04-13T07:49:02.257Z [DEBUG] Plugin impeccable@impeccable already in installed_plugins.json, skipping
+2026-04-13T07:49:02.265Z [DEBUG] Saved 1 installed plugins to /home/aryaniyaps/.claude/plugins/installed_plugins.json (schema version 1)
+2026-04-13T07:49:02.265Z [DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 1 skipped)
+2026-04-13T07:49:02.265Z [DEBUG] Found 1 installed plugins
+2026-04-13T07:49:02.272Z [DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-04-13T07:49:02.272Z [DEBUG] Found 0 missing plugins (not installed):
+2026-04-13T07:49:02.272Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-04-13T07:49:02.292Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-04-13T07:49:02.331Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 43ms
+2026-04-13T07:49:02.331Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code VSCode MCP","version":"2.1.96"}}
+2026-04-13T07:49:03.593Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:03.593Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:03.603Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:03.603Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:03.644Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066543644
+2026-04-13T07:49:03.644Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:03.652Z [DEBUG] Temp file written successfully, size: 12091 bytes
+2026-04-13T07:49:03.652Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:03.652Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066543644 to /home/aryaniyaps/.claude.json
+2026-04-13T07:49:03.652Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:49:03.695Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-04-13T07:49:03.695Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:03.695Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-04-13T07:49:03.696Z [DEBUG] FileHistory: Added snapshot for 016af855-50d1-4b06-a00c-6c0d2051e41f, tracking 0 files
+2026-04-13T07:49:03.777Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-04-13T07:49:03.782Z [DEBUG] Total plugin output styles loaded: 0
+2026-04-13T07:49:03.791Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 14ms
+2026-04-13T07:49:03.811Z [DEBUG] Slash commands included in SlashCommand tool:
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:animate" (userFacingName="animate")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:clarify" (userFacingName="clarify")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:distill" (userFacingName="distill")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:frontend-design" (userFacingName="frontend-design")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:critique" (userFacingName="critique")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:normalize" (userFacingName="normalize")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:audit" (userFacingName="audit")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:teach-impeccable" (userFacingName="teach-impeccable")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:extract" (userFacingName="extract")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:overdrive" (userFacingName="overdrive")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:adapt" (userFacingName="adapt")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:delight" (userFacingName="delight")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:arrange" (userFacingName="arrange")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:colorize" (userFacingName="colorize")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:typeset" (userFacingName="typeset")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:harden" (userFacingName="harden")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:onboard" (userFacingName="onboard")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:optimize" (userFacingName="optimize")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:polish" (userFacingName="polish")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:bolder" (userFacingName="bolder")
+2026-04-13T07:49:03.811Z [DEBUG] Skill prompt: showing "impeccable:quieter" (userFacingName="quieter")
+2026-04-13T07:49:03.811Z [DEBUG] Skills and commands included in Skill tool: design-html, plan-ceo-review, gstack, gstack-upgrade, careful, review, guard, design-shotgun, plan-eng-review, qa, open-gstack-browser, ship, investigate, open-gstack-browser, codex, document-release, devex-review, freeze, plan-devex-review, office-hours, retro, canary, health, benchmark, pair-agent, design-review, design-consultation, browse, gstack, learn, qa-only, setup-deploy, plan-design-review, autoplan, checkpoint, unfreeze, setup-browser-cookies, land-and-deploy, cso, animate, clarify, distill, frontend-design, critique, normalize, audit, teach-impeccable, extract, overdrive, adapt, delight, arrange, colorize, typeset, harden, onboard, optimize, polish, bolder, quieter
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:animate" (userFacingName="animate")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:clarify" (userFacingName="clarify")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:distill" (userFacingName="distill")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:frontend-design" (userFacingName="frontend-design")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:critique" (userFacingName="critique")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:normalize" (userFacingName="normalize")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:audit" (userFacingName="audit")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:teach-impeccable" (userFacingName="teach-impeccable")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:extract" (userFacingName="extract")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:overdrive" (userFacingName="overdrive")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:adapt" (userFacingName="adapt")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:delight" (userFacingName="delight")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:arrange" (userFacingName="arrange")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:colorize" (userFacingName="colorize")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:typeset" (userFacingName="typeset")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:harden" (userFacingName="harden")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:onboard" (userFacingName="onboard")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:optimize" (userFacingName="optimize")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:polish" (userFacingName="polish")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:bolder" (userFacingName="bolder")
+2026-04-13T07:49:03.812Z [DEBUG] Skill prompt: showing "impeccable:quieter" (userFacingName="quieter")
+2026-04-13T07:49:04.935Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:07.729Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:09.921Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:49:09.925Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:49:09.925Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:09.925Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:09.938Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066549938
+2026-04-13T07:49:09.938Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:09.950Z [DEBUG] Temp file written successfully, size: 607 bytes
+2026-04-13T07:49:09.950Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:09.950Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066549938 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:49:09.950Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:49:09.969Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:49:09.969Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:09.969Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:10.002Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:10.002Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:10.003Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:10.008Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:10.008Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:10.031Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 29ms
+2026-04-13T07:49:12.487Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:12.631Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:49:12.637Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:49:12.638Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:12.638Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:49:12.673Z [DEBUG] No hook environment files found
+2026-04-13T07:49:12.775Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:12.775Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:12.775Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:12.780Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:12.781Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:12.807Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 32ms
+2026-04-13T07:49:18.299Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:18.682Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:49:18.691Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:49:18.691Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:18.691Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:18.710Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066558710
+2026-04-13T07:49:18.710Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:18.720Z [DEBUG] Temp file written successfully, size: 609 bytes
+2026-04-13T07:49:18.720Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:18.720Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066558710 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:49:18.720Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:49:18.735Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:49:18.735Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:18.735Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:18.760Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:18.761Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:18.761Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:18.765Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:18.765Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:18.775Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 15ms
+2026-04-13T07:49:20.825Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:20.992Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:20.992Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:20.992Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:20.997Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:20.997Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:21.022Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 30ms
+2026-04-13T07:49:23.472Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:23.697Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:49:23.706Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:49:23.706Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:23.706Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:49:23.798Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-04-13T07:49:23.798Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:23.798Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:49:23.833Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:23.833Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:23.833Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:23.838Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:23.838Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:23.861Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+2026-04-13T07:49:24.985Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:28.516Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:28.689Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:49:28.694Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:49:28.694Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:28.694Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:28.706Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066568706
+2026-04-13T07:49:28.706Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:28.714Z [DEBUG] Temp file written successfully, size: 611 bytes
+2026-04-13T07:49:28.714Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:28.714Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066568706 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:49:28.714Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:49:28.728Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:49:28.729Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:28.729Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:28.756Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:28.756Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:28.756Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:28.761Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:28.761Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:28.775Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 19ms
+2026-04-13T07:49:33.890Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:34.204Z [DEBUG] executePreToolHooks called for tool: Write
+2026-04-13T07:49:34.213Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-04-13T07:49:34.213Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:34.214Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-04-13T07:49:34.245Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:34.273Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+2026-04-13T07:49:34.274Z [DEBUG] FileHistory: Tracked file modification for /home/aryaniyaps/web-projects/portfolio/CLAUDE.md
+2026-04-13T07:49:35.041Z [DEBUG] Writing to temp file: /home/aryaniyaps/web-projects/portfolio/CLAUDE.md.tmp.5024.1776066575041
+2026-04-13T07:49:35.048Z [DEBUG] Temp file written successfully, size: 673 bytes
+2026-04-13T07:49:35.048Z [DEBUG] Renaming /home/aryaniyaps/web-projects/portfolio/CLAUDE.md.tmp.5024.1776066575041 to /home/aryaniyaps/web-projects/portfolio/CLAUDE.md
+2026-04-13T07:49:35.048Z [DEBUG] File /home/aryaniyaps/web-projects/portfolio/CLAUDE.md written atomically
+2026-04-13T07:49:35.061Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-04-13T07:49:35.061Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:35.061Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-04-13T07:49:35.110Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:35.111Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:35.111Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:35.115Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:35.116Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:35.136Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-04-13T07:49:39.500Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:39.906Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:49:39.914Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:49:39.914Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:39.914Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:39.935Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066579935
+2026-04-13T07:49:39.935Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:39.942Z [DEBUG] Temp file written successfully, size: 613 bytes
+2026-04-13T07:49:39.942Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:39.942Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066579935 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:49:39.943Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:49:39.972Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:49:39.972Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:39.972Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:49:40.000Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:49:40.001Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:49:40.001Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:49:40.005Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:49:40.005Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:49:40.039Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 39ms
+2026-04-13T07:49:49.527Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:49:50.707Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-04-13T07:49:50.707Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:49:50.707Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-04-13T07:49:50.730Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066590730
+2026-04-13T07:49:50.730Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:50.737Z [DEBUG] Temp file written successfully, size: 12091 bytes
+2026-04-13T07:49:50.737Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:50.737Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066590730 to /home/aryaniyaps/.claude.json
+2026-04-13T07:49:50.737Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:49:50.742Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066590742
+2026-04-13T07:49:50.742Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:49:50.749Z [DEBUG] Temp file written successfully, size: 12091 bytes
+2026-04-13T07:49:50.749Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:49:50.749Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066590742 to /home/aryaniyaps/.claude.json
+2026-04-13T07:49:50.749Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:50:06.862Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:50:06.862Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:50:06.862Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:50:06.867Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:50:06.867Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:50:06.878Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 16ms
+2026-04-13T07:50:06.902Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-04-13T07:50:06.902Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:06.902Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-04-13T07:50:06.902Z [DEBUG] FileHistory: Making snapshot for message 1371ddba-91ad-46bc-bf8f-f4d8a5df8db7
+2026-04-13T07:50:06.911Z [DEBUG] FileHistory: Added snapshot for 1371ddba-91ad-46bc-bf8f-f4d8a5df8db7, tracking 1 files
+2026-04-13T07:50:06.949Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-04-13T07:50:06.951Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066606951
+2026-04-13T07:50:06.951Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:50:06.958Z [DEBUG] Temp file written successfully, size: 12552 bytes
+2026-04-13T07:50:06.959Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:50:06.959Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066606951 to /home/aryaniyaps/.claude.json
+2026-04-13T07:50:06.959Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:50:06.975Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 26ms
+2026-04-13T07:50:08.736Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:10.161Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:16.842Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:50:16.848Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:50:16.848Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:16.848Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:50:16.863Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066616863
+2026-04-13T07:50:16.863Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:50:16.870Z [DEBUG] Temp file written successfully, size: 806 bytes
+2026-04-13T07:50:16.870Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:50:16.870Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066616863 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:50:16.870Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:50:16.888Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:50:16.888Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:16.888Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:50:16.920Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:50:16.920Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:50:16.920Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:50:16.926Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:50:16.926Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:50:16.948Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+2026-04-13T07:50:20.581Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:20.749Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:50:20.755Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:50:20.755Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:20.755Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:50:23.559Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-04-13T07:50:23.559Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:23.559Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:50:23.600Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:50:23.600Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:50:23.600Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:50:23.606Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:50:23.606Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:50:23.633Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 33ms
+2026-04-13T07:50:24.934Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:28.338Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:28.832Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:50:28.838Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:50:28.838Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:28.838Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:50:28.938Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-04-13T07:50:28.938Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:28.939Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:50:28.978Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:50:28.978Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:50:28.978Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:50:28.983Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:50:28.984Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:50:28.999Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 21ms
+2026-04-13T07:50:30.835Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:35.749Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:41.287Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:50:41.292Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:50:41.293Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:41.293Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:50:41.311Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066641311
+2026-04-13T07:50:41.311Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:50:41.318Z [DEBUG] Temp file written successfully, size: 1230 bytes
+2026-04-13T07:50:41.318Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:50:41.318Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066641311 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:50:41.318Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:50:41.339Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:50:41.339Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:41.339Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:50:41.392Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:50:41.392Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:50:41.392Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:50:41.397Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:50:41.397Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:50:41.411Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 19ms
+2026-04-13T07:50:44.211Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:44.335Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:50:44.341Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:50:44.341Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:44.341Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:50:47.261Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-04-13T07:50:47.261Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:47.261Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:50:47.307Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:50:47.308Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:50:47.308Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:50:47.314Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:50:47.314Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:50:47.342Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 35ms
+2026-04-13T07:50:52.105Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:54.645Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:54.864Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:50:54.872Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:50:54.872Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:54.872Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:50:54.893Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066654893
+2026-04-13T07:50:54.893Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:50:54.900Z [DEBUG] Temp file written successfully, size: 1232 bytes
+2026-04-13T07:50:54.900Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:50:54.900Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066654893 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:50:54.900Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:50:54.930Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:50:54.930Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:54.930Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:50:54.984Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:50:54.985Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:50:54.985Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:50:54.994Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:50:54.994Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:50:55.025Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 41ms
+2026-04-13T07:50:58.875Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:50:59.234Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:50:59.243Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:50:59.243Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:50:59.243Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:51:02.572Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:02.668Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:51:02.668Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:51:02.668Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:51:02.673Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:51:02.673Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:51:02.687Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 19ms
+2026-04-13T07:51:05.802Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:06.248Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:51:06.255Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:51:06.255Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:06.255Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:51:07.345Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:07.444Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-04-13T07:51:07.444Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:07.445Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:51:07.491Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:51:07.492Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:51:07.492Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:51:07.498Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:51:07.498Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:51:07.533Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 42ms
+2026-04-13T07:51:09.831Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:10.658Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:10.844Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:51:10.854Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:51:10.854Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:10.854Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:51:11.009Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-04-13T07:51:11.009Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:11.009Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:51:11.046Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:51:11.047Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:51:11.047Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:51:11.052Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:51:11.052Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:51:11.078Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 32ms
+2026-04-13T07:51:21.713Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:24.564Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:24.814Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:51:24.821Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:51:24.821Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:24.821Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:51:24.844Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066684844
+2026-04-13T07:51:24.844Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:51:24.860Z [DEBUG] Temp file written successfully, size: 1234 bytes
+2026-04-13T07:51:24.860Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:51:24.861Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066684844 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:51:24.861Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:51:24.887Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:51:24.887Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:24.887Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:51:24.933Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:51:24.934Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:51:24.934Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:51:24.941Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:51:24.941Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:51:24.974Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 41ms
+2026-04-13T07:51:27.494Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:27.646Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-04-13T07:51:27.653Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-04-13T07:51:27.653Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:27.653Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:51:28.878Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:29.072Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:29.089Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:29.178Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-04-13T07:51:29.178Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:29.178Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-04-13T07:51:29.215Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:51:29.215Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:51:29.215Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:51:29.221Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:51:29.221Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:51:29.242Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 27ms
+2026-04-13T07:51:34.789Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:35.172Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:35.396Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-04-13T07:51:35.403Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-04-13T07:51:35.403Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:35.403Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:51:35.425Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066695425
+2026-04-13T07:51:35.425Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:51:35.433Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-04-13T07:51:35.433Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:51:35.433Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json.tmp.5024.1776066695425 to /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json
+2026-04-13T07:51:35.433Z [DEBUG] File /home/aryaniyaps/.claude/todos/ff7e88d8-4476-493f-832f-05aeab740d36-agent-ff7e88d8-4476-493f-832f-05aeab740d36.json written atomically
+2026-04-13T07:51:35.457Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-04-13T07:51:35.457Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:35.457Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-04-13T07:51:35.500Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-04-13T07:51:35.500Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-13T07:51:35.500Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-13T07:51:35.508Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-13T07:51:35.508Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-13T07:51:35.526Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-04-13T07:51:41.340Z [DEBUG] Stream started - received first chunk
+2026-04-13T07:51:45.452Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-04-13T07:51:45.452Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:51:45.452Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-04-13T07:51:45.469Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066705469
+2026-04-13T07:51:45.469Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:51:45.476Z [DEBUG] Temp file written successfully, size: 12552 bytes
+2026-04-13T07:51:45.476Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:51:45.476Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066705469 to /home/aryaniyaps/.claude.json
+2026-04-13T07:51:45.476Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:51:45.484Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066705484
+2026-04-13T07:51:45.484Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:51:45.490Z [DEBUG] Temp file written successfully, size: 12552 bytes
+2026-04-13T07:51:45.490Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:51:45.490Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066705484 to /home/aryaniyaps/.claude.json
+2026-04-13T07:51:45.491Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-13T07:52:11.825Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-04-13T07:52:11.825Z [DEBUG] Found 0 hook matchers in settings
+2026-04-13T07:52:11.825Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2026-04-13T07:52:11.828Z [DEBUG] Cleaned up session snapshot: /home/aryaniyaps/.claude/shell-snapshots/snapshot-zsh-1776066533841-b6oau9.sh
+2026-04-13T07:52:11.835Z [DEBUG] LSP server manager shut down successfully
+2026-04-13T07:52:11.837Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-04-13T07:52:11.837Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-04-13T07:52:11.837Z [DEBUG] Metrics export disabled by organization setting
+2026-04-13T07:52:11.837Z [DEBUG] BigQuery metrics exporter flush complete
+2026-04-13T07:52:11.837Z [DEBUG] BigQuery metrics exporter flush complete
+2026-04-13T07:52:11.837Z [DEBUG] BigQuery metrics exporter shutdown complete
+2026-04-13T07:52:11.841Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.5024.1776066731841
+2026-04-13T07:52:11.842Z [DEBUG] Preserving file permissions: 100600
+2026-04-13T07:52:11.849Z [DEBUG] Temp file written successfully, size: 13002 bytes
+2026-04-13T07:52:11.849Z [DEBUG] Applied original permissions to temp file
+2026-04-13T07:52:11.849Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.5024.1776066731841 to /home/aryaniyaps/.claude.json
+2026-04-13T07:52:11.849Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically

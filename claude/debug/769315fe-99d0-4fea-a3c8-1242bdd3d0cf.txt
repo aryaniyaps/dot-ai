@@ -1,0 +1,19 @@
+2026-04-15T07:23:55.935Z [DEBUG] Watching for changes in setting files /home/aryaniyaps/.claude/settings.json, /home/aryaniyaps/web-projects/portfolio/.claude/settings.json...
+2026-04-15T07:23:55.958Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-04-15T07:23:55.958Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-04-15T07:23:55.959Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-04-15T07:23:55.959Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-04-15T07:23:55.959Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-04-15T07:23:55.967Z [DEBUG] Loading plugin impeccable from source: "./"
+2026-04-15T07:23:55.969Z [DEBUG] Loading plugin caveman from source: "./"
+2026-04-15T07:23:55.970Z [DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+2026-04-15T07:23:56.003Z [DEBUG] Total LSP servers loaded: 0
+2026-04-15T07:23:56.004Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-04-15T07:23:56.004Z [DEBUG] LSP manager initialized with 0 servers
+2026-04-15T07:23:56.004Z [DEBUG] LSP server manager initialized successfully
+2026-04-15T07:23:56.005Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-04-15T07:23:56.007Z [DEBUG] Git remote URL: https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:23:56.007Z [DEBUG] Parsed repository: aryaniyaps/portfolio from https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:23:56.007Z [DEBUG] Parsed repository: aryaniyaps/portfolio from URL: https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:23:56.007Z [DEBUG] Path /home/aryaniyaps/web-projects/portfolio already tracked for repo aryaniyaps/portfolio
+2026-04-15T07:23:58.405Z [INFO] SSH not configured for GitHub, using HTTPS for JuliusBrussee/caveman

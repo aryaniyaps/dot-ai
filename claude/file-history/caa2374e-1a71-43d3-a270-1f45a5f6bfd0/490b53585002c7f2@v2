@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LTI Workflow Wireframe</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .flow-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .screen {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .screen-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 14px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+        .screen-content {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        .field {
+            background: #f9f9f9;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+        .field-label {
+            font-weight: 600;
+            color: #555;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .field-value {
+            color: #333;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+        }
+        .button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin: 8px 0;
+            font-size: 12px;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            color: #667eea;
+            padding: 10px 0;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        .room-card {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 8px 0;
+            border: 1px dashed #999;
+        }
+        .capacity-field {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 8px 0;
+        }
+        .editable {
+            border: 1px solid #667eea;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 20px; color: #333;">LTI End-to-End Workflow Wireframe</h1>
+
+    <div class="flow-container">
+        <!-- SCREEN 1: Moodle LTI Configuration -->
+        <div class="screen">
+            <div class="screen-title">1. Moodle: Teacher Configures LTI Tool</div>
+            <div class="screen-content">
+                <div class="field">
+                    <span class="field-label">Activity name</span>
+                    <span class="field-value">Proctoring Exam - Midterm</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">External tool type</span>
+                    <span class="field-value">Set up tool manually</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Tool URL</span>
+                    <span class="field-value">http://localhost:5000/api/lti/launch</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Consumer key</span>
+                    <span class="field-value">moodle</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Shared secret</span>
+                    <span class="field-value">••••••••</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Privacy</span>
+                    <span class="field-value">✓ Share launcher's name<br>✓ Share launcher's email</span>
+                </div>
+                <div class="button">Save and display</div>
+            </div>
+        </div>
+
+        <!-- ARROW -->
+        <div class="arrow">→</div>
+
+        <!-- SCREEN 2: Student Clicks LTI Link -->
+        <div class="screen">
+            <div class="screen-title">2. Moodle: Student Clicks LTI Link</div>
+            <div class="screen-content">
+                <div style="background: #e8f5e9; padding: 10px; border-radius: 4px; margin-bottom: 10px;">
+                    <strong>Moodle Course Page</strong><br><br>
+                    📝 Quiz: Midterm Exam<br>
+                    📹 <span class="highlight">Proctoring Exam - Midterm</span><br><br>
+                    <em>(Student clicks link to launch proctoring)</em>
+                </div>
+                <div class="field">
+                    <span class="field-label">What happens:</span>
+                    <span class="field-value">Moodle sends POST to /api/lti/launch with:<br>• OAuth 1.0 signature<br>• LTI context (course, resource, user)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARROW -->
+        <div class="arrow">→</div>
+
+        <!-- SCREEN 3: Backend Processing -->
+        <div class="screen">
+            <div class="screen-title">3. Backend: LTI Launch Handler</div>
+            <div class="screen-content">
+                <div class="field">
+                    <span class="field-label">Step 1: Validate OAuth</span>
+                    <span class="field-value">✓ Signature valid<br>✓ Timestamp fresh<br>✓ Nonce unused</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Step 2: Find/Create Room</span>
+                    <span class="field-value">lti_context_key = "course_123_quiz_456"<br>→ Room created: <strong>XY7kPq2M</strong></span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Step 3: Find/Create User</span>
+                    <span class="field-value">student@university.edu → user_id: 42</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Step 4: Generate JWT</span>
+                    <span class="field-value">{userId, roomCode, exp: 24h}</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Step 5: Return HTML</span>
+                    <span class="field-value">Redirect page with deep link</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARROW -->
+        <div class="arrow">→</div>
+
+        <!-- SCREEN 4: HTML Redirect Page -->
+        <div class="screen">
+            <div class="screen-title">4. Browser: Launching Proctoring App</div>
+            <div class="screen-content">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; text-align: center;">
+                    <h2>🚀 Launching Proctoring App</h2>
+                    <div style="border: 4px solid white; border-top-color: transparent; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 20px auto;"></div>
+                    <p><strong>Room:</strong> <span style="font-family: 'Courier New'; background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 4px;">XY7kPq2M</span></p>
+                    <p style="font-size: 11px; opacity: 0.9;">The desktop app should open automatically.</p>
+                </div>
+                <div class="field" style="margin-top: 15px;">
+                    <span class="field-label">Deep link URL:</span>
+                    <span class="field-value" style="font-size: 10px; word-break: break-all;">proctor://room/XY7kPq2M?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARROW -->
+        <div class="arrow">→</div>
+
+        <!-- SCREEN 5: Desktop App Opens -->
+        <div class="screen">
+            <div class="screen-title">5. Desktop App: Room Join</div>
+            <div class="screen-content">
+                <div class="field">
+                    <span class="field-label">Parsed from URL:</span>
+                    <span class="field-value">roomCode: XY7kPq2M<br>token: jwt... (signed)</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Validation:</span>
+                    <span class="field-value">✓ JWT signature valid<br>✓ Token not expired<br>✓ Room exists in DB</span>
+                </div>
+                <div class="field">
+                    <span class="field-label">Prefilled form:</span>
+                    <span class="field-value">Name: John Student<br>Email: student@university.edu<br>Room Code: XY7kPq2M</span>
+                </div>
+                <div class="button" style="width: 100%; text-align: center;">Join Room (auto-clicks)</div>
+            </div>
+        </div>
+
+        <!-- ARROW -->
+        <div class="arrow">→</div>
+
+        <!-- SCREEN 6: Teacher Dashboard -->
+        <div class="screen">
+            <div class="screen-title">6. Teacher Dashboard: LTI Room Management</div>
+            <div class="screen-content">
+                <div style="background: #e3f2fd; padding: 8px; border-radius: 4px; margin-bottom: 10px; font-size: 11px;">
+                    <strong>My Rooms</strong> (filtered by teacher_id = current user)
+                </div>
+                <div class="room-card">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                        <strong>Proctoring Exam - Midterm</strong>
+                        <span style="background: #4caf50; color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px;">ACTIVE</span>
+                    </div>
+                    <div class="capacity-field">
+                        <span class="field-label">Room Code:</span>
+                        <span class="field-value">XY7kPq2M</span>
+                    </div>
+                    <div class="capacity-field">
+                        <span class="field-label">Students:</span>
+                        <span class="field-value">8 / <span class="editable">15</span> <button style="margin-left: 4px; font-size: 10px;">✏️</button></span>
+                    </div>
+                    <div class="capacity-field">
+                        <span class="field-label">Source:</span>
+                        <span class="field-value" style="font-size: 10px; color: #666;">LTI (auto-created)</span>
+                    </div>
+                    <div class="button" style="width: 100%; text-align: center; font-size: 11px;">Monitor Room →</div>
+                </div>
+                <div style="font-size: 10px; color: #666; margin-top: 8px; font-style: italic;">
+                    * Teacher can edit capacity limit (max students)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; padding: 20px; background: white; border-radius: 8px;">
+        <h3 style="color: #667eea; margin-bottom: 10px;">Key Features</h3>
+        <ul style="text-align: left; max-width: 600px; margin: 0 auto; line-height: 1.8; font-size: 14px;">
+            <li><strong>One-click setup:</strong> Teacher adds LTI tool in Moodle, room auto-creates on first launch</li>
+            <li><strong>Secure deep link:</strong> JWT token prevents unauthorized room access</li>
+            <li><strong>Teacher control:</strong> Teachers view and edit ONLY their own rooms (capacity limits)</li>
+            <li><strong>Dynamic limits:</strong> Teacher can change "15" to "20" — 21st student gets "room full" error</li>
+            <li><strong>Zero friction:</strong> Student clicks link → desktop app opens → joins room (3 seconds total)</li>
+        </ul>
+    </div>
+
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/**
+ * Performance monitoring utilities
+ * Tracks frame times, memory usage, and auto-disables particles on slow devices
+ */
+
+export interface PerformanceMetrics {
+  frameTime: number;
+  fps: number;
+  memoryUsed: number;
+  shouldDisableParticles: boolean;
+}
+
+/**
+ * Performance monitoring state
+ */
+let slowFrameCount = 0;
+const DISABLE_THRESHOLD = 20; // ms
+const CONSECUTIVE_SLOW_FRAMES = 3;
+const MEMORY_BUDGET = 100; // MB
+const PARTICLE_COOLDOWN = 5000; // ms
+let particlesDisabledAt = 0;
+
+/**
+ * Measure frame time and determine if particles should be disabled
+ * Call this every frame in your R3F component
+ */
+export function measureFrameTime(delta: number): { shouldDisableParticles: boolean } {
+  const frameTimeMs = delta * 1000;
+
+  if (frameTimeMs > DISABLE_THRESHOLD) {
+    slowFrameCount++;
+    if (slowFrameCount >= CONSECUTIVE_SLOW_FRAMES) {
+      particlesDisabledAt = Date.now();
+      return { shouldDisableParticles: true };
+    }
+  } else {
+    slowFrameCount = 0;
+  }
+
+  return { shouldDisableParticles: false };
+}
+
+/**
+ * Check if particles should be re-enabled after cooldown
+ * Call this periodically to recover from transient slowdowns
+ */
+export function shouldReEnableParticles(): boolean {
+  if (particlesDisabledAt === 0) return true;
+
+  const elapsed = Date.now() - particlesDisabledAt;
+  if (elapsed > PARTICLE_COOLDOWN) {
+    particlesDisabledAt = 0;
+    slowFrameCount = 0;
+    return true;
+  }
+
+  return false;
+}
+
+/**
+ * Get current memory usage in MB
+ * Returns 0 if API not available
+ */
+export function getMemoryUsage(): number {
+  if (typeof window === 'undefined' || !(performance as any).memory) {
+    return 0;
+  }
+
+  const memory = (performance as any).memory;
+  return memory.usedJSHeapSize / (1024 * 1024);
+}
+
+/**
+ * Check if memory budget is exceeded
+ */
+export function isMemoryBudgetExceeded(): boolean {
+  const used = getMemoryUsage();
+  return used > MEMORY_BUDGET;
+}
+
+/**
+ * Get comprehensive performance metrics
+ */
+export function getPerformanceMetrics(delta: number): PerformanceMetrics {
+  const frameTimeMs = delta * 1000;
+  const fps = 1000 / frameTimeMs;
+  const memoryUsed = getMemoryUsage();
+
+  return {
+    frameTime: frameTimeMs,
+    fps: Math.round(fps * 10) / 10,
+    memoryUsed: Math.round(memoryUsed * 10) / 10,
+    shouldDisableParticles: slowFrameCount >= CONSECUTIVE_SLOW_FRAMES,
+  };
+}
+
+/**
+ * Reset performance monitoring state
+ * Call when scene changes or user toggles performance mode
+ */
+export function resetPerformanceMonitoring(): void {
+  slowFrameCount = 0;
+  particlesDisabledAt = 0;
+}

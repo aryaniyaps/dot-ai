@@ -1,0 +1,78 @@
+# Polymarket Cricket T20 Data Exploration
+
+**Goal:** Explore historical cricket T20 prediction markets on Polymarket to identify exploitable edges for algorithmic trading.
+
+**Status:** Week 1 - Data Collection and Initial Analysis
+
+## Project Structure
+
+```
+polymarket-bot/
+├── data/                          # Raw and processed data
+├── notebooks/
+│   └── 01_data_exploration.ipynb  # Main analysis notebook
+├── .venv/                         # Python virtual environment
+├── requirements.txt               # Python dependencies
+└── README.md                      # This file
+```
+
+## Quick Start
+
+### 1. Setup Environment
+
+```bash
+# Activate virtual environment
+source .venv/bin/activate
+
+# Install dependencies (if not already installed)
+uv pip install -r requirements.txt
+```
+
+### 2. Start Jupyter
+
+```bash
+# Activate virtual environment
+source .venv/bin/activate
+
+# Start Jupyter Lab
+jupyter lab
+```
+
+### 3. Run Analysis
+
+Open `notebooks/01_data_exploration.ipynb` in Jupyter and execute cells sequentially.
+
+## Data Source
+
+**API:** Polymarket Gamma API (public, no authentication required)
+
+**Endpoint:** `https://gamma-api.polymarket.com/events?tag_id=517&closed=true`
+
+**Scope:** ALL T20 cricket matches (IPL, PSL, International T20, Legends, etc.)
+
+**Initial Dataset:** 500+ events with 1037+ markets
+
+## Known Limitations
+
+- ⚠️ **No time-series price history** — only final outcome prices available
+- Analysis will focus on final prices and market efficiency rather than intraday movements
+
+## Week 1 Tasks
+
+- [x] Set up Jupyter environment
+- [x] Create project structure
+- [x] Write data fetching functions
+- [x] Implement data validation
+- [ ] Fetch proof of concept data (20 markets)
+- [ ] Load into Pandas DataFrame
+- [ ] Create initial visualizations
+
+## API Usage Notes
+
+- Implements 1-second delays between requests as courtesy
+- No authentication required
+- robots.txt allows scraping
+
+## Design Document
+
+See `.gstack/projects/aryaniyaps-polymarket-bot/aryaniyaps-main-design-20260409-110224.md` for full project design and reconnaissance findings.

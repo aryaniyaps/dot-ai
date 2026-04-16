@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Research Cricbuzz website structure for live cricket data",
+    "status": "completed",
+    "activeForm": "Researching Cricbuzz website structure"
+  },
+  {
+    "content": "Build Selenium scraper with undetected-chromedriver",
+    "status": "in_progress",
+    "activeForm": "Building Selenium scraper"
+  },
+  {
+    "content": "Extract ball-by-ball data from Cricbuzz pages",
+    "status": "pending",
+    "activeForm": "Extracting ball-by-ball data"
+  },
+  {
+    "content": "Implement match title normalization (Polymarket ↔ Cricbuzz)",
+    "status": "pending",
+    "activeForm": "Implementing match title normalization"
+  },
+  {
+    "content": "Add ball-by-ball tracking to match_monitor.py",
+    "status": "pending",
+    "activeForm": "Adding ball-by-ball tracking"
+  },
+  {
+    "content": "Implement event detection (wickets, boundaries, overs)",
+    "status": "pending",
+    "activeForm": "Implementing event detection"
+  },
+  {
+    "content": "Build event-price correlation engine",
+    "status": "pending",
+    "activeForm": "Building correlation engine"
+  },
+  {
+    "content": "Test on live T20 match",
+    "status": "pending",
+    "activeForm": "Testing on live match"
+  }
+]

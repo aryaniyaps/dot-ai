@@ -1,0 +1,80 @@
+import HolographicCard from '@/components/HolographicCard';
+
+export const metadata = {
+  title: 'Projects | Aryaniya PS',
+  description: 'Featured projects and technical deep-dives',
+};
+
+const projects = [
+  {
+    title: 'AI Code Reviewer',
+    description: 'Automated code review system using LLMs to catch bugs and suggest improvements',
+    founderPerspective: 'Proves technical founders can ship production AI tools at VC startup speed',
+    techStack: ['TypeScript', 'OpenAI', 'Next.js', 'PostgreSQL'],
+    deepDiveLink: '/projects/ai-code-reviewer',
+  },
+  {
+    title: 'GraphQL Analytics Platform',
+    description: 'Real-time GraphQL query analytics and performance monitoring for production APIs',
+    founderPerspective: 'Shows deep understanding of GraphQL internals and production observability',
+    techStack: ['GraphQL', 'Rust', 'ClickHouse', 'React'],
+    deepDiveLink: '/projects/graphql-analytics',
+  },
+  {
+    title: 'Developer Workflow Automation',
+    description: 'CLI tools that automate repetitive development tasks and reduce context switching',
+    founderPerspective: 'Demonstrates focus on developer experience and productivity tooling',
+    techStack: ['Go', 'Shell', 'Docker', 'Kubernetes'],
+    deepDiveLink: '/projects/dev-workflow',
+  },
+];
+
+export default function ProjectsPage() {
+  return (
+    <div className="min-h-screen bg-holo-bg py-20">
+      {/* Grid background */}
+      <div className="fixed inset-0 opacity-10" style={{
+        backgroundImage: `
+          linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px)
+        `,
+        backgroundSize: '50px 50px',
+      }} />
+
+      <div className="relative z-10 container mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl font-heading mb-4 text-gradient-holographic">
+            Projects
+          </h1>
+          <p className="text-xl text-holo-text opacity-80">
+            Technical deep-dives and production systems
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {projects.map((project) => (
+            <HolographicCard
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              founderPerspective={project.founderPerspective}
+              techStack={project.techStack}
+              deepDiveLink={project.deepDiveLink}
+              className="h-full"
+            />
+          ))}
+        </div>
+
+        {/* More coming indicator */}
+        <div className="mt-16 text-center">
+          <div className="inline-flex items-center gap-2 px-6 py-3 border border-holo-teal/30 rounded-lg">
+            <div className="w-2 h-2 bg-holo-teal rounded-full animate-pulse" />
+            <span className="mono text-sm text-holo-teal">More projects shipping soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

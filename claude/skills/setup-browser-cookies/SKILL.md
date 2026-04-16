@@ -1,0 +1,1 @@
+/home/aryaniyaps/.claude/skills/gstack/setup-browser-cookies/SKILL.md

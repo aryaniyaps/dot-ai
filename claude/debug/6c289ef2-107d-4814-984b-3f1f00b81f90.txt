@@ -1,0 +1,1482 @@
+2026-03-26T07:07:24.095Z [DEBUG] Watching for changes in setting files /home/aryaniyaps/.claude/settings.json, /home/aryaniyaps/web-projects/moodle-proctor/.claude/settings.local.json...
+2026-03-26T07:07:24.118Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-26T07:07:24.118Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-26T07:07:24.118Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-26T07:07:24.119Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-03-26T07:07:24.119Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-03-26T07:07:24.124Z [DEBUG] Applying permission update: Adding 36 allow rule(s) to destination 'localSettings': ["Bash(curl:*)","Bash(bash:*)","Bash(export:*)","Bash(./setup:*)","Bash(rm -rf .venv)","Bash(uv venv:*)","Bash(uv sync:*)","Bash(sudo apt-get:*)","Skill(office-hours)","Bash(~/.claude/skills/gstack/bin/gstack-update-check:*)","Bash(source:*)","Bash(echo:*)","Bash([:*)","Bash(~/.claude/skills/gstack/bin/gstack-config set telemetry community:*)","WebSearch","Bash(/home/aryaniyaps/web-projects/moodle-proctor/.claude/skills/gstack/browse/dist/browse:*)","Bash(~/.claude/skills/gstack/browse/bin/remote-slug)","Bash(git rev-parse:*)","Bash(cat:*)","Bash(~/.claude/skills/gstack/bin/gstack-config get gstack_contributor:*)","Bash(~/.claude/skills/gstack/bin/gstack-config get:*)","Bash(gh pr view:*)","Bash(gh repo view:*)","Bash(git checkout:*)","Bash(git add:*)","Bash(git commit:*)","Skill(review)","Bash(npm test:*)","Bash(docker-compose ps:*)","Bash(docker-compose logs:*)","Bash(docker exec:*)","Bash(docker port:*)","Bash(docker logs:*)","Bash(mkdir:*)","Bash(docker-compose restart:*)","Bash(docker-compose up:*)"]
+2026-03-26T07:07:24.130Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508844130
+2026-03-26T07:07:24.130Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:24.138Z [DEBUG] Temp file written successfully, size: 10468 bytes
+2026-03-26T07:07:24.138Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:24.138Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508844130 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:24.139Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:07:24.139Z [DEBUG] Loading plugin impeccable from source: "./"
+2026-03-26T07:07:24.140Z [DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+2026-03-26T07:07:24.178Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/aryaniyaps/.claude/skills, project=/home/aryaniyaps/web-projects/moodle-proctor/.claude/skills
+2026-03-26T07:07:24.207Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2026-03-26T07:07:24.223Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:07:24.227Z [DEBUG] Creating shell snapshot for zsh (/usr/bin/zsh)
+2026-03-26T07:07:24.228Z [DEBUG] Looking for shell config file: /home/aryaniyaps/.zshrc
+2026-03-26T07:07:24.228Z [DEBUG] Snapshots directory: /home/aryaniyaps/.claude/shell-snapshots
+2026-03-26T07:07:24.229Z [DEBUG] Creating snapshot at: /home/aryaniyaps/.claude/shell-snapshots/snapshot-zsh-1774508844228-n65afh.sh
+2026-03-26T07:07:24.229Z [DEBUG] Shell binary exists: true
+2026-03-26T07:07:24.229Z [DEBUG] Execution timeout: 10000ms
+2026-03-26T07:07:24.232Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/6c289ef2-107d-4814-984b-3f1f00b81f90-agent-6c289ef2-107d-4814-984b-3f1f00b81f90.json.tmp.36007.1774508844232
+2026-03-26T07:07:24.238Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-03-26T07:07:24.238Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/6c289ef2-107d-4814-984b-3f1f00b81f90-agent-6c289ef2-107d-4814-984b-3f1f00b81f90.json.tmp.36007.1774508844232 to /home/aryaniyaps/.claude/todos/6c289ef2-107d-4814-984b-3f1f00b81f90-agent-6c289ef2-107d-4814-984b-3f1f00b81f90.json
+2026-03-26T07:07:24.239Z [DEBUG] File /home/aryaniyaps/.claude/todos/6c289ef2-107d-4814-984b-3f1f00b81f90-agent-6c289ef2-107d-4814-984b-3f1f00b81f90.json written atomically
+2026-03-26T07:07:24.243Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508844243
+2026-03-26T07:07:24.243Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:24.250Z [DEBUG] Temp file written successfully, size: 10057 bytes
+2026-03-26T07:07:24.250Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:24.250Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508844243 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:24.250Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:07:24.251Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-03-26T07:07:24.251Z [DEBUG] Checking plugin impeccable: skillsPath=none, skillsPaths=1 paths
+2026-03-26T07:07:24.251Z [DEBUG] Attempting to load skills from plugin impeccable skillsPaths: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills
+2026-03-26T07:07:24.251Z [DEBUG] Loading from skillPath: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills for plugin impeccable
+2026-03-26T07:07:24.258Z [DEBUG] Total plugin commands loaded: 0
+2026-03-26T07:07:24.258Z [DEBUG] Registered 0 hooks from 1 plugins
+2026-03-26T07:07:24.260Z [DEBUG] Loaded 56 unique skills (managed: 0, user: 28, project: 28, duplicates removed: 0)
+2026-03-26T07:07:24.261Z [DEBUG] Loaded 21 skills from plugin impeccable custom path: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills
+2026-03-26T07:07:24.261Z [DEBUG] Total plugin skills loaded: 21
+2026-03-26T07:07:24.261Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:07:24.261Z [DEBUG] getSkills returning: 56 skill dir commands, 21 plugin skills
+2026-03-26T07:07:24.261Z [DEBUG] Total plugin agents loaded: 0
+2026-03-26T07:07:24.286Z [DEBUG] Total LSP servers loaded: 0
+2026-03-26T07:07:24.286Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-26T07:07:24.286Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-26T07:07:24.286Z [DEBUG] LSP server manager initialized successfully
+2026-03-26T07:07:24.286Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-26T07:07:24.380Z [DEBUG] Git remote URL: https://github.com/aryaniyaps/moodle-proctor
+2026-03-26T07:07:24.380Z [DEBUG] Parsed repository: aryaniyaps/moodle-proctor from https://github.com/aryaniyaps/moodle-proctor
+2026-03-26T07:07:24.380Z [DEBUG] Parsed repository: aryaniyaps/moodle-proctor from URL: https://github.com/aryaniyaps/moodle-proctor
+2026-03-26T07:07:24.380Z [DEBUG] Path /home/aryaniyaps/web-projects/moodle-proctor already tracked for repo aryaniyaps/moodle-proctor
+2026-03-26T07:07:24.391Z [DEBUG] Acquired lock on running version: /home/aryaniyaps/.local/share/claude/versions/2.0.50
+2026-03-26T07:07:25.100Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/aryaniyaps/.local/share/claude/versions/2.0.50)
+2026-03-26T07:07:25.345Z [DEBUG] Shell snapshot created successfully (184978 bytes)
+2026-03-26T07:07:29.000Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508849000
+2026-03-26T07:07:29.000Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:29.008Z [DEBUG] Temp file written successfully, size: 10098 bytes
+2026-03-26T07:07:29.008Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:29.008Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508849000 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:29.008Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:07:29.022Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508849022
+2026-03-26T07:07:29.022Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:29.029Z [DEBUG] Temp file written successfully, size: 10098 bytes
+2026-03-26T07:07:29.029Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:29.029Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508849022 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:29.029Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:07:29.035Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-26T07:07:29.035Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:07:29.035Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-26T07:07:29.090Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508849090
+2026-03-26T07:07:29.090Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:29.097Z [DEBUG] Temp file written successfully, size: 9990 bytes
+2026-03-26T07:07:29.097Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:29.097Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508849090 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:29.097Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:07:29.102Z [DEBUG] performStartupChecks called
+2026-03-26T07:07:29.103Z [DEBUG] Starting background plugin installations
+2026-03-26T07:07:29.103Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-26T07:07:29.486Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508849486
+2026-03-26T07:07:29.486Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:29.493Z [DEBUG] Temp file written successfully, size: 10098 bytes
+2026-03-26T07:07:29.493Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:29.493Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508849486 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:29.494Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:07:29.494Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:07:29.714Z [DEBUG] Found 1 enabled plugins
+2026-03-26T07:07:29.714Z [DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+2026-03-26T07:07:29.716Z [DEBUG] Loaded 1 installed plugins from /home/aryaniyaps/.claude/plugins/installed_plugins.json (schema version 1)
+2026-03-26T07:07:29.716Z [DEBUG] Plugin impeccable@impeccable already in installed_plugins.json, skipping
+2026-03-26T07:07:29.723Z [DEBUG] Saved 1 installed plugins to /home/aryaniyaps/.claude/plugins/installed_plugins.json (schema version 1)
+2026-03-26T07:07:29.723Z [DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 1 skipped)
+2026-03-26T07:07:29.723Z [DEBUG] Found 1 installed plugins
+2026-03-26T07:07:29.729Z [DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-26T07:07:29.729Z [DEBUG] Found 0 missing plugins (not installed):
+2026-03-26T07:07:29.729Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-03-26T07:07:29.749Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-03-26T07:07:29.754Z [DEBUG] Summarizing all 155 messages (~38726 tokens)
+2026-03-26T07:07:29.757Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508849757
+2026-03-26T07:07:29.757Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:29.765Z [DEBUG] Temp file written successfully, size: 10098 bytes
+2026-03-26T07:07:29.765Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:29.765Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508849757 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:29.765Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:07:29.794Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-03-26T07:07:29.794Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:07:29.794Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-03-26T07:07:29.798Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-03-26T07:07:29.798Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:07:29.798Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-03-26T07:07:29.824Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 80ms
+2026-03-26T07:07:29.824Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code VSCode MCP","version":"2.1.83"}}
+2026-03-26T07:07:31.614Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:31.626Z [DEBUG] Summarizing all 8 messages (~0 tokens)
+2026-03-26T07:07:32.562Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:32.567Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-03-26T07:07:32.567Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:07:32.567Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-26T07:07:32.667Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:32.672Z [DEBUG] Summarizing all 9 messages (~0 tokens)
+2026-03-26T07:07:34.655Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:34.656Z [DEBUG] Summarizing all 10 messages (~0 tokens)
+2026-03-26T07:07:34.689Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:35.664Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-03-26T07:07:35.664Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:07:35.664Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-26T07:07:35.773Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:35.774Z [DEBUG] Summarizing all 21 messages (~0 tokens)
+2026-03-26T07:07:36.769Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:36.770Z [DEBUG] Summarizing all 5 messages (~0 tokens)
+2026-03-26T07:07:37.919Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:37.920Z [DEBUG] Summarizing all 19 messages (~0 tokens)
+2026-03-26T07:07:39.134Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:39.135Z [DEBUG] Summarizing all 28 messages (~0 tokens)
+2026-03-26T07:07:40.359Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:40.360Z [DEBUG] Summarizing all 39 messages (~3287 tokens)
+2026-03-26T07:07:41.409Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:41.410Z [DEBUG] Summarizing all 53 messages (~6064 tokens)
+2026-03-26T07:07:42.549Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:42.550Z [DEBUG] Summarizing all 73 messages (~9908 tokens)
+2026-03-26T07:07:43.807Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:07:50.771Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774508870771
+2026-03-26T07:07:50.771Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:07:50.778Z [DEBUG] Temp file written successfully, size: 10098 bytes
+2026-03-26T07:07:50.778Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:07:50.778Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774508870771 to /home/aryaniyaps/.claude.json
+2026-03-26T07:07:50.778Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:08:43.098Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:08:43.098Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:08:43.105Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:08:43.105Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:08:43.148Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-26T07:08:43.148Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:08:43.148Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-26T07:08:43.149Z [DEBUG] FileHistory: Added snapshot for 693af955-8f08-4dc6-917b-065fd3906cd9, tracking 0 files
+2026-03-26T07:08:43.193Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-03-26T07:08:43.197Z [DEBUG] Total plugin output styles loaded: 0
+2026-03-26T07:08:43.228Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 35ms
+2026-03-26T07:08:43.246Z [DEBUG] Slash commands included in SlashCommand tool:
+2026-03-26T07:08:43.246Z [DEBUG] Skill prompt: showing "impeccable:animate" (userFacingName="animate")
+2026-03-26T07:08:43.246Z [DEBUG] Skill prompt: showing "impeccable:clarify" (userFacingName="clarify")
+2026-03-26T07:08:43.246Z [DEBUG] Skill prompt: showing "impeccable:distill" (userFacingName="distill")
+2026-03-26T07:08:43.246Z [DEBUG] Skill prompt: showing "impeccable:frontend-design" (userFacingName="frontend-design")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:critique" (userFacingName="critique")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:normalize" (userFacingName="normalize")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:audit" (userFacingName="audit")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:teach-impeccable" (userFacingName="teach-impeccable")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:extract" (userFacingName="extract")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:overdrive" (userFacingName="overdrive")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:adapt" (userFacingName="adapt")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:delight" (userFacingName="delight")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:arrange" (userFacingName="arrange")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:colorize" (userFacingName="colorize")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:typeset" (userFacingName="typeset")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:harden" (userFacingName="harden")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:onboard" (userFacingName="onboard")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:optimize" (userFacingName="optimize")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:polish" (userFacingName="polish")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:bolder" (userFacingName="bolder")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:quieter" (userFacingName="quieter")
+2026-03-26T07:08:43.247Z [DEBUG] Skills and commands included in Skill tool: plan-ceo-review, gstack-upgrade, careful, review, guard, plan-eng-review, qa, ship, investigate, codex, document-release, freeze, office-hours, retro, canary, benchmark, design-review, design-consultation, browse, gstack, qa-only, setup-deploy, plan-design-review, autoplan, unfreeze, setup-browser-cookies, land-and-deploy, cso, plan-ceo-review, gstack-upgrade, careful, review, guard, plan-eng-review, qa, ship, investigate, codex, document-release, freeze, office-hours, retro, canary, benchmark, design-review, design-consultation, browse, gstack, qa-only, setup-deploy, plan-design-review, autoplan, unfreeze, setup-browser-cookies, land-and-deploy, cso, animate, clarify, distill, frontend-design, critique, normalize, audit, teach-impeccable, extract, overdrive, adapt, delight, arrange, colorize, typeset, harden, onboard, optimize, polish, bolder, quieter
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:animate" (userFacingName="animate")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:clarify" (userFacingName="clarify")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:distill" (userFacingName="distill")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:frontend-design" (userFacingName="frontend-design")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:critique" (userFacingName="critique")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:normalize" (userFacingName="normalize")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:audit" (userFacingName="audit")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:teach-impeccable" (userFacingName="teach-impeccable")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:extract" (userFacingName="extract")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:overdrive" (userFacingName="overdrive")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:adapt" (userFacingName="adapt")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:delight" (userFacingName="delight")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:arrange" (userFacingName="arrange")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:colorize" (userFacingName="colorize")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:typeset" (userFacingName="typeset")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:harden" (userFacingName="harden")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:onboard" (userFacingName="onboard")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:optimize" (userFacingName="optimize")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:polish" (userFacingName="polish")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:bolder" (userFacingName="bolder")
+2026-03-26T07:08:43.247Z [DEBUG] Skill prompt: showing "impeccable:quieter" (userFacingName="quieter")
+2026-03-26T07:08:45.002Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:08:49.529Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:08:51.947Z [DEBUG] executePreToolHooks called for tool: Skill
+2026-03-26T07:08:51.951Z [DEBUG] Getting matching hook commands for PreToolUse with query: Skill
+2026-03-26T07:08:51.951Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:08:51.951Z [DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+2026-03-26T07:08:51.966Z [DEBUG] Metadata string for office-hours:
+2026-03-26T07:08:51.966Z [DEBUG] <command-message>The "office-hours" skill is running</command-message>
+<command-name>office-hours</command-name>
+2026-03-26T07:08:51.966Z [DEBUG] command-message tags in metadata: 1
+2026-03-26T07:08:51.982Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:08:51.982Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:08:51.983Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:08:51.986Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:08:51.986Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:08:52.004Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 22ms
+2026-03-26T07:08:52.004Z [DEBUG] processPromptSlashCommand creating 2 messages for office-hours
+2026-03-26T07:08:52.004Z [DEBUG] Message 1: <command-message>The "office-hours" skill is running</command-message>
+<command-name>office-hours</command-name>
+2026-03-26T07:08:52.005Z [DEBUG] Message 2 [META]: [{"type":"text","text":"Base directory for this skill: /home/aryaniyaps/.claude/skills/office-hours\n\n<!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->\n<!-- Regenerate: bun run gen:s
+2026-03-26T07:08:52.005Z [DEBUG] SkillTool returning 2 newMessages for skill office-hours
+2026-03-26T07:08:52.005Z [DEBUG] newMessage 1: <command-message>The "office-hours" skill is running</command-message>
+<command-name>office-hours</command-name>...
+2026-03-26T07:08:52.006Z [DEBUG] newMessage 2: [{"type":"text","text":"Base directory for this skill: /home/aryaniyaps/.claude/skills/office-hours\n\n<!-- AUTO-GENERATED from SKILL.md.tmpl — do not...
+2026-03-26T07:08:52.014Z [DEBUG] Getting matching hook commands for PostToolUse with query: Skill
+2026-03-26T07:08:52.014Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:08:52.014Z [DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+2026-03-26T07:08:52.021Z [DEBUG] Rendering user message with 1 content blocks
+2026-03-26T07:08:52.021Z [DEBUG] Block 0: <command-message>The "office-hours" skill is running</command-message>
+<command-name>office-hours</c...
+2026-03-26T07:08:52.021Z [DEBUG] UserCommandMessage rendering: "The "office-hours" skill is running" (args: "none")
+2026-03-26T07:08:52.021Z [DEBUG] isSkillFormat: true, prefix: ""
+2026-03-26T07:08:52.027Z [DEBUG] Rendering user message with 1 content blocks
+2026-03-26T07:08:52.027Z [DEBUG] Block 0: <command-message>The "office-hours" skill is running</command-message>
+<command-name>office-hours</c...
+2026-03-26T07:08:52.027Z [DEBUG] UserCommandMessage rendering: "The "office-hours" skill is running" (args: "none")
+2026-03-26T07:08:52.027Z [DEBUG] isSkillFormat: true, prefix: ""
+2026-03-26T07:08:52.033Z [DEBUG] Rendering user message with 1 content blocks
+2026-03-26T07:08:52.033Z [DEBUG] Block 0: <command-message>The "office-hours" skill is running</command-message>
+<command-name>office-hours</c...
+2026-03-26T07:08:52.033Z [DEBUG] UserCommandMessage rendering: "The "office-hours" skill is running" (args: "none")
+2026-03-26T07:08:52.033Z [DEBUG] isSkillFormat: true, prefix: ""
+2026-03-26T07:08:52.052Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:08:52.052Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:08:52.052Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:08:52.056Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:08:52.056Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:08:52.079Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 27ms
+2026-03-26T07:09:28.573Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:28.842Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:09:28.849Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:09:28.849Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:28.849Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:28.901Z [DEBUG] No hook environment files found
+2026-03-26T07:09:28.974Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:09:28.975Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:09:28.975Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:09:28.981Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:09:28.982Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:09:28.994Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 20ms
+2026-03-26T07:09:39.944Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:40.097Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:09:40.103Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:09:40.103Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:40.103Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:41.841Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:09:41.841Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:41.841Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:41.876Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:09:41.876Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:09:41.876Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:09:41.883Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:09:41.883Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:09:41.918Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 42ms
+2026-03-26T07:09:43.400Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:45.190Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:45.374Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:09:45.381Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:09:45.381Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:45.381Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:09:45.420Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:09:45.420Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:45.420Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:09:45.462Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:09:45.463Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:09:45.463Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:09:45.469Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:09:45.469Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:09:45.486Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 24ms
+2026-03-26T07:09:48.708Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:48.899Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:09:48.907Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:09:48.908Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:48.908Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:49.875Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:50.191Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:50.330Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:50.370Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:50.371Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:50.430Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:09:50.430Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:50.430Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:50.460Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:09:50.460Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:09:50.460Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:09:50.466Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:09:50.466Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:09:50.482Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 22ms
+2026-03-26T07:09:51.756Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:53.928Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:54.144Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:09:54.153Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:09:54.153Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:54.153Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:54.257Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:09:54.258Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:54.258Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:54.288Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:09:54.288Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:09:54.288Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:09:54.293Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:09:54.293Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:09:54.317Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 29ms
+2026-03-26T07:09:55.970Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:57.250Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:09:57.443Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:09:57.448Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:09:57.449Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:57.449Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:57.542Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:09:57.542Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:09:57.542Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:09:57.574Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:09:57.575Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:09:57.575Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:09:57.579Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:09:57.579Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:09:57.593Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 19ms
+2026-03-26T07:09:58.727Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:00.749Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:00.968Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-03-26T07:10:00.974Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-03-26T07:10:00.974Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:00.974Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:04.536Z [DEBUG] rg error (signal=null, code=2, stderr: rg: Resource temporarily unavailable (os error 11)
+), 2081 results
+2026-03-26T07:10:04.546Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-03-26T07:10:04.546Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:04.546Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:04.577Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:04.578Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:04.578Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:04.584Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:04.584Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:04.612Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 35ms
+2026-03-26T07:10:08.619Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:08.889Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-03-26T07:10:08.896Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-03-26T07:10:08.897Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:08.897Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:09.837Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-03-26T07:10:09.837Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:09.837Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:09.867Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:09.867Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:09.867Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:09.872Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:09.872Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:09.890Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 23ms
+2026-03-26T07:10:12.905Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:13.123Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:10:13.130Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:10:13.131Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:13.131Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:13.168Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:10:13.168Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:13.168Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:13.211Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:13.212Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:13.212Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:13.218Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:13.218Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:13.233Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 22ms
+2026-03-26T07:10:16.768Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:16.892Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-03-26T07:10:16.897Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-03-26T07:10:16.897Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:16.897Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:17.852Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-03-26T07:10:17.852Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:17.852Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:17.880Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:17.880Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:17.880Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:17.885Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:17.885Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:17.902Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 22ms
+2026-03-26T07:10:22.731Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:22.893Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:10:22.901Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:10:22.901Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:22.901Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:22.938Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:10:22.938Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:22.938Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:22.985Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:22.985Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:22.985Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:22.993Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:22.993Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:23.011Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-03-26T07:10:34.937Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:35.200Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:10:35.207Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:10:35.207Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:35.207Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:35.245Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:10:35.245Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:35.245Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:35.291Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:35.291Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:35.291Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:35.298Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:35.298Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:35.326Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 35ms
+2026-03-26T07:10:40.401Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:40.614Z [DEBUG] executePreToolHooks called for tool: Grep
+2026-03-26T07:10:40.622Z [DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+2026-03-26T07:10:40.622Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:40.622Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-03-26T07:10:41.402Z [DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+2026-03-26T07:10:41.402Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:41.402Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-03-26T07:10:41.430Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:41.430Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:41.430Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:41.436Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:41.437Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:41.446Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 16ms
+2026-03-26T07:10:44.469Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:44.600Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:10:44.605Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:10:44.605Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:44.605Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:46.295Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:10:46.295Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:46.295Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:10:46.326Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:46.327Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:46.327Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:46.331Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:46.331Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:46.344Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 18ms
+2026-03-26T07:10:51.739Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:51.991Z [DEBUG] executePreToolHooks called for tool: Grep
+2026-03-26T07:10:51.998Z [DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+2026-03-26T07:10:51.998Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:51.998Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-03-26T07:10:52.774Z [DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+2026-03-26T07:10:52.774Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:52.774Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-03-26T07:10:52.803Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:52.804Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:52.804Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:52.808Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:52.808Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:52.821Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 18ms
+2026-03-26T07:10:55.416Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:10:55.544Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-03-26T07:10:55.549Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-03-26T07:10:55.549Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:55.549Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:56.481Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-03-26T07:10:56.481Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:10:56.481Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:10:56.510Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:10:56.511Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:10:56.511Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:10:56.515Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:10:56.515Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:10:56.533Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 23ms
+2026-03-26T07:10:59.866Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:11:00.093Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:11:00.100Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:11:00.100Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:00.100Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:11:00.138Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:11:00.138Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:00.138Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:11:00.180Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:11:00.180Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:11:00.180Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:11:00.187Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:11:00.187Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:11:00.211Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 32ms
+2026-03-26T07:11:05.875Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:11:12.078Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:11:12.084Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:11:12.084Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:12.084Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:11:12.116Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:11:12.123Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:11:12.123Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:12.123Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:11:26.619Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:11:26.632Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:11:26.632Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:26.632Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:11:26.664Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:11:26.665Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:11:26.665Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:11:26.670Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:11:26.670Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:11:26.688Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 24ms
+2026-03-26T07:11:31.020Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:11:31.276Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:11:31.277Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:11:31.277Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:11:31.283Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:11:31.283Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:11:31.301Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 25ms
+2026-03-26T07:11:36.160Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:11:36.325Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:11:36.332Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:11:36.332Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:36.332Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:11:36.377Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:11:36.389Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:11:36.389Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:36.389Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:11:42.466Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:11:42.466Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:42.466Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:11:57.616Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:11:57.629Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:11:57.629Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:11:57.629Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:11:57.662Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:11:57.663Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:11:57.663Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:11:57.668Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:11:57.669Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:11:57.686Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 24ms
+2026-03-26T07:12:03.487Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:12:03.680Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:12:03.688Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:12:03.688Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:03.688Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:12:03.735Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:12:03.746Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:12:03.747Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:03.747Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:12:09.803Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:12:09.803Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:09.803Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:12:15.306Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:12:15.320Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:12:15.320Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:15.320Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:12:15.354Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:12:15.355Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:12:15.355Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:12:15.360Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:12:15.360Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:12:15.377Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 23ms
+2026-03-26T07:12:24.116Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:12:24.116Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:12:24.116Z [DEBUG] Metrics export disabled by organization setting
+2026-03-26T07:12:26.204Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:12:26.452Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:12:26.459Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:12:26.459Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:26.459Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:12:26.502Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:12:26.513Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:12:26.513Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:26.513Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:12:32.542Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:12:32.542Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:32.543Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:12:38.507Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:12:38.520Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:12:38.520Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:38.520Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:12:38.556Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:12:38.556Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:12:38.557Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:12:38.562Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:12:38.562Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:12:38.575Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 19ms
+2026-03-26T07:12:45.265Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:12:45.454Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:12:45.463Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:12:45.463Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:45.463Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:12:45.507Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:12:45.519Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:12:45.519Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:12:45.519Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:13:29.971Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:13:29.985Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:13:29.985Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:13:29.985Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:13:30.028Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:13:30.029Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:13:30.029Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:13:30.034Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:13:30.034Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:13:30.052Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 24ms
+2026-03-26T07:13:35.393Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:13:35.990Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:13:35.996Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:13:35.996Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:13:35.996Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:13:36.103Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:13:36.103Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:13:36.103Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:13:36.133Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:13:36.134Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:13:36.134Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:13:36.138Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:13:36.138Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:13:36.171Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 38ms
+2026-03-26T07:13:37.623Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:13:46.911Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:13:47.072Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:13:47.076Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:13:47.076Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:13:47.076Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:13:47.101Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:13:47.107Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:13:47.107Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:13:47.107Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:13:51.824Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:13:51.836Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:13:51.836Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:13:51.836Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:13:51.871Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:13:51.871Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:13:51.871Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:13:51.877Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:13:51.877Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:13:51.894Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 23ms
+2026-03-26T07:13:55.316Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:13:55.490Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2026-03-26T07:13:55.498Z [DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+2026-03-26T07:13:55.498Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:13:55.498Z [DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+2026-03-26T07:13:57.978Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:14:13.925Z [DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+2026-03-26T07:14:13.925Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:14:13.925Z [DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+2026-03-26T07:14:13.963Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:14:13.964Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:14:13.964Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:14:13.971Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:14:13.971Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:14:13.986Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 23ms
+2026-03-26T07:14:32.736Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:14:41.480Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:14:41.485Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:14:41.485Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:14:41.485Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:14:41.514Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:14:41.520Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:14:41.520Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:14:41.520Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:14:53.313Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:14:53.313Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:14:53.313Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:15:08.837Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:15:08.851Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:15:08.851Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:15:08.851Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:15:08.887Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:15:08.888Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:15:08.888Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:15:08.894Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:15:08.894Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:15:08.914Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 27ms
+2026-03-26T07:15:14.717Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:15:29.885Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:15:29.890Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:15:29.890Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:15:29.890Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:15:29.917Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:15:29.924Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:15:29.924Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:15:29.924Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:15:35.982Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:15:35.982Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:15:35.982Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:16:02.260Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:16:02.274Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:16:02.274Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:02.274Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:16:02.307Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:16:02.307Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:16:02.307Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:16:02.313Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:16:02.313Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:16:02.333Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-03-26T07:16:07.957Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:16:08.299Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:16:08.309Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:16:08.309Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:08.309Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:16:08.357Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:16:08.358Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:08.358Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:16:08.413Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:16:08.414Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:16:08.414Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:16:08.423Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:16:08.424Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:16:08.453Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 40ms
+2026-03-26T07:16:13.107Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:16:13.816Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-03-26T07:16:13.822Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-03-26T07:16:13.822Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:13.822Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:16:14.825Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-03-26T07:16:14.825Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:14.825Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-03-26T07:16:14.861Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:16:14.861Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:16:14.861Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:16:14.867Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:16:14.867Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:16:14.888Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 27ms
+2026-03-26T07:16:18.188Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:16:18.356Z [DEBUG] executePreToolHooks called for tool: Grep
+2026-03-26T07:16:18.363Z [DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+2026-03-26T07:16:18.363Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:18.364Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-03-26T07:16:19.172Z [DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+2026-03-26T07:16:19.172Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:19.173Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-03-26T07:16:19.203Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:16:19.203Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:16:19.203Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:16:19.208Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:16:19.208Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:16:19.218Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 15ms
+2026-03-26T07:16:27.510Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:16:27.792Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:16:27.800Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:16:27.800Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:27.800Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:16:27.840Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:16:27.840Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:27.840Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:16:27.885Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:16:27.886Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:16:27.886Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:16:27.893Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:16:27.893Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:16:27.921Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 36ms
+2026-03-26T07:16:32.739Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:16:32.896Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:16:32.902Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:16:32.902Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:32.902Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:16:32.928Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:16:32.928Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:32.928Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:16:32.959Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:16:32.959Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:16:32.959Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:16:32.964Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:16:32.964Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:16:32.986Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 27ms
+2026-03-26T07:16:40.459Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:16:42.732Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:16:42.740Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:16:42.740Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:42.740Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:16:42.837Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:16:42.837Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:16:42.837Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:16:42.877Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:16:42.879Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:16:42.879Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:16:42.885Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:16:42.885Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:16:42.920Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 43ms
+2026-03-26T07:16:44.265Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:17:24.128Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:17:24.129Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:17:24.129Z [DEBUG] Metrics export disabled by organization setting
+2026-03-26T07:18:19.243Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:18:19.458Z [DEBUG] executePreToolHooks called for tool: Write
+2026-03-26T07:18:19.466Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-03-26T07:18:19.466Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:18:19.466Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-03-26T07:18:19.492Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:18:19.518Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-03-26T07:18:19.519Z [DEBUG] FileHistory: Tracked file modification for /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:18:20.295Z [DEBUG] Writing to temp file: /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509500295
+2026-03-26T07:18:20.303Z [DEBUG] Temp file written successfully, size: 22615 bytes
+2026-03-26T07:18:20.303Z [DEBUG] Renaming /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509500295 to /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:18:20.303Z [DEBUG] File /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md written atomically
+2026-03-26T07:18:20.316Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-03-26T07:18:20.316Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:18:20.316Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-03-26T07:18:20.364Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:18:20.365Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:18:20.365Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:18:20.370Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:18:20.370Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:18:20.392Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+2026-03-26T07:18:34.212Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:18:34.565Z [DEBUG] executePreToolHooks called for tool: Task
+2026-03-26T07:18:34.574Z [DEBUG] Getting matching hook commands for PreToolUse with query: Task
+2026-03-26T07:18:34.574Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:18:34.574Z [DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+2026-03-26T07:18:34.638Z [DEBUG] Getting matching hook commands for SubagentStart with query: general-purpose
+2026-03-26T07:18:34.638Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:18:34.638Z [DEBUG] Matched 0 unique hooks for query "general-purpose" (0 before deduplication)
+2026-03-26T07:18:48.338Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:18:48.359Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:18:48.367Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:18:48.367Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:18:48.367Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:18:48.411Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:18:48.411Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:18:48.411Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:07.440Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:07.480Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:07.487Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:07.493Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:07.499Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:07.500Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:07.500Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:07.500Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:07.500Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:07.500Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:07.500Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:07.500Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:07.500Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:07.796Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:07.796Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:07.797Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:07.992Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:07.992Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:07.992Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:08.017Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:08.017Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:08.017Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:08.980Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:09.837Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:09.838Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:10.985Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:11.053Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:11.062Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:11.071Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:11.080Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:11.080Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:11.080Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:11.080Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:11.080Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:11.080Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:11.080Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:11.080Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:11.080Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:11.223Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:11.223Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:11.223Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:11.223Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:11.223Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:11.223Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:11.223Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:11.223Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:11.223Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:14.470Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:14.514Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:14.520Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:14.526Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:14.532Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:14.533Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:14.533Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:14.533Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:14.533Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:14.533Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:14.533Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:14.533Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:14.533Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:14.713Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:14.713Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:14.713Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:14.738Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:14.738Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:14.738Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:14.762Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:14.762Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:14.762Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:15.650Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:16.378Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:16.444Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:17.751Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:17.801Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:17.808Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:17.814Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:17.820Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:17.820Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:17.820Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:17.820Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:17.820Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:17.820Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:17.820Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:17.820Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:17.820Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:17.973Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:17.973Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:17.973Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:18.048Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:18.048Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:18.048Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:18.085Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:18.085Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:18.085Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:19.146Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:19.737Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:21.417Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:21.459Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:21.468Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:21.478Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:21.478Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:21.478Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:21.478Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:21.478Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:21.478Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:21.582Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:21.582Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:21.582Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:21.582Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:21.582Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:21.582Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:28.165Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:28.208Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:28.216Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:28.224Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:28.224Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:28.225Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:28.225Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:28.225Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:28.225Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:28.372Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:28.372Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:28.372Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:28.400Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:28.400Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:28.400Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:28.409Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:28.416Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:28.416Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:28.416Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:29.874Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:29.909Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:29.982Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:29.982Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:29.983Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:30.300Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:30.809Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:32.483Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:32.784Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:32.815Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:32.829Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:32.829Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:32.829Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:32.829Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:32.849Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:32.849Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:32.849Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:32.943Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:32.943Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:32.943Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:33.008Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:33.008Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:33.008Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:34.283Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:36.888Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:36.927Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:36.934Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:36.943Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:36.943Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:36.943Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:36.943Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:36.943Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:36.943Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:37.126Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:37.126Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:37.126Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:37.174Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:37.174Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:37.175Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:40.088Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:40.133Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:19:40.141Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:19:40.150Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:19:40.150Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:40.150Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:40.150Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:19:40.150Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:40.150Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:40.256Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:19:40.256Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:40.256Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:19:40.324Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:19:40.324Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:19:40.324Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:19:44.868Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:46.567Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:46.573Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:19:46.908Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:20:54.748Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-03-26T07:20:54.748Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:20:54.749Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-26T07:20:54.768Z [DEBUG] Getting matching hook commands for PostToolUse with query: Task
+2026-03-26T07:20:54.768Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:20:54.768Z [DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+2026-03-26T07:20:54.818Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:20:54.818Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:20:54.818Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:20:54.825Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:20:54.825Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:20:54.863Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 46ms
+2026-03-26T07:21:01.829Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:21:22.452Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-03-26T07:21:22.461Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-03-26T07:21:22.461Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:21:22.461Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:21:22.486Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:21:22.502Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 16ms
+2026-03-26T07:21:22.519Z [DEBUG] Writing to temp file: /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509682519
+2026-03-26T07:21:22.519Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:21:22.526Z [DEBUG] Temp file written successfully, size: 25192 bytes
+2026-03-26T07:21:22.526Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:21:22.526Z [DEBUG] Renaming /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509682519 to /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:21:22.526Z [DEBUG] File /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md written atomically
+2026-03-26T07:21:22.545Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-03-26T07:21:22.545Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:21:22.545Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:21:22.875Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:21:22.876Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:21:22.876Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:21:22.882Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:21:22.882Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:21:22.912Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 37ms
+2026-03-26T07:21:38.851Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:21:39.157Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-03-26T07:21:39.165Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-03-26T07:21:39.165Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:21:39.165Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:21:39.190Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:21:39.212Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 22ms
+2026-03-26T07:21:39.220Z [DEBUG] Writing to temp file: /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509699220
+2026-03-26T07:21:39.220Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:21:39.227Z [DEBUG] Temp file written successfully, size: 25399 bytes
+2026-03-26T07:21:39.227Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:21:39.227Z [DEBUG] Renaming /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509699220 to /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:21:39.227Z [DEBUG] File /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md written atomically
+2026-03-26T07:21:39.243Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-03-26T07:21:39.244Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:21:39.244Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:21:39.300Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:21:39.301Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:21:39.301Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:21:39.306Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:21:39.306Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:21:39.338Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 38ms
+2026-03-26T07:21:54.435Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:21:54.680Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-03-26T07:21:54.688Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-03-26T07:21:54.688Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:21:54.688Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:21:54.712Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:21:54.740Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+2026-03-26T07:21:54.749Z [DEBUG] Writing to temp file: /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509714749
+2026-03-26T07:21:54.749Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:21:54.756Z [DEBUG] Temp file written successfully, size: 25038 bytes
+2026-03-26T07:21:54.756Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:21:54.756Z [DEBUG] Renaming /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509714749 to /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:21:54.757Z [DEBUG] File /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md written atomically
+2026-03-26T07:21:54.769Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-03-26T07:21:54.769Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:21:54.769Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:21:54.876Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:21:54.877Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:21:54.877Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:21:54.882Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:21:54.883Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:21:54.908Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 32ms
+2026-03-26T07:22:10.395Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:22:10.628Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-03-26T07:22:10.636Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-03-26T07:22:10.636Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:10.636Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:22:10.662Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:22:10.684Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 22ms
+2026-03-26T07:22:10.692Z [DEBUG] Writing to temp file: /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509730692
+2026-03-26T07:22:10.693Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:22:10.700Z [DEBUG] Temp file written successfully, size: 25078 bytes
+2026-03-26T07:22:10.700Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:22:10.700Z [DEBUG] Renaming /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509730692 to /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:22:10.700Z [DEBUG] File /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md written atomically
+2026-03-26T07:22:10.713Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-03-26T07:22:10.713Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:10.713Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:22:10.796Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:22:10.797Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:22:10.797Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:22:10.802Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:22:10.802Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:22:10.836Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 40ms
+2026-03-26T07:22:22.998Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:22:23.352Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:22:23.353Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:22:23.353Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:22:23.362Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:22:23.362Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:22:23.381Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 29ms
+2026-03-26T07:22:24.133Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:22:24.133Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:22:24.133Z [DEBUG] Metrics export disabled by organization setting
+2026-03-26T07:22:26.642Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:22:26.842Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:22:26.847Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:22:26.847Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:26.847Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:22:26.877Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:22:26.877Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:26.877Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:22:26.912Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:22:26.913Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:22:26.913Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:22:26.919Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:22:26.919Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:22:26.938Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-03-26T07:22:39.407Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:22:39.709Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-03-26T07:22:39.718Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-03-26T07:22:39.718Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:39.718Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:22:39.744Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:22:39.775Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 31ms
+2026-03-26T07:22:39.787Z [DEBUG] Writing to temp file: /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509759787
+2026-03-26T07:22:39.787Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:22:39.796Z [DEBUG] Temp file written successfully, size: 26872 bytes
+2026-03-26T07:22:39.796Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:22:39.796Z [DEBUG] Renaming /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509759787 to /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:22:39.796Z [DEBUG] File /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md written atomically
+2026-03-26T07:22:39.810Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-03-26T07:22:39.810Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:39.810Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:22:39.886Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:22:39.887Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:22:39.887Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:22:39.893Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:22:39.893Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:22:39.915Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 29ms
+2026-03-26T07:22:45.278Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:22:45.547Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:22:45.558Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:22:45.558Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:45.558Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:22:47.192Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:22:47.192Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:22:47.192Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:22:47.227Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:22:47.227Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:22:47.228Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:22:47.234Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:22:47.234Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:22:47.253Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-03-26T07:22:48.260Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:23:01.660Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:23:08.841Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:23:08.847Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:23:08.847Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:23:08.847Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:23:08.879Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:23:08.887Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:23:08.887Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:23:08.887Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:23:20.690Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:23:20.690Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:23:20.690Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:23:40.125Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:23:40.141Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:23:40.141Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:23:40.141Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:23:40.179Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:23:40.180Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:23:40.181Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:23:40.187Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:23:40.187Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:23:40.210Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 31ms
+2026-03-26T07:23:51.231Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:23:51.569Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-03-26T07:23:51.577Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-03-26T07:23:51.577Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:23:51.577Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:23:51.603Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:23:51.630Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 27ms
+2026-03-26T07:23:51.639Z [DEBUG] Writing to temp file: /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509831639
+2026-03-26T07:23:51.639Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:23:51.645Z [DEBUG] Temp file written successfully, size: 26875 bytes
+2026-03-26T07:23:51.645Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:23:51.645Z [DEBUG] Renaming /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md.tmp.36007.1774509831639 to /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md
+2026-03-26T07:23:51.645Z [DEBUG] File /home/aryaniyaps/.gstack/projects/aryaniyaps-moodle-proctor/aryaniyaps-main-design-20260326-071642.md written atomically
+2026-03-26T07:23:51.657Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-03-26T07:23:51.657Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:23:51.657Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-03-26T07:23:51.700Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:23:51.701Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:23:51.701Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:23:51.706Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:23:51.706Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:23:51.735Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 35ms
+2026-03-26T07:23:56.039Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:24:03.197Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-26T07:24:03.197Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:24:03.197Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-26T07:24:03.224Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774509843224
+2026-03-26T07:24:03.224Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:24:03.231Z [DEBUG] Temp file written successfully, size: 10098 bytes
+2026-03-26T07:24:03.231Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:24:03.231Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774509843224 to /home/aryaniyaps/.claude.json
+2026-03-26T07:24:03.231Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:24:03.238Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.36007.1774509843238
+2026-03-26T07:24:03.238Z [DEBUG] Preserving file permissions: 100600
+2026-03-26T07:24:03.245Z [DEBUG] Temp file written successfully, size: 10098 bytes
+2026-03-26T07:24:03.245Z [DEBUG] Applied original permissions to temp file
+2026-03-26T07:24:03.245Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.36007.1774509843238 to /home/aryaniyaps/.claude.json
+2026-03-26T07:24:03.245Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-26T07:27:24.154Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:27:24.154Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:27:24.154Z [DEBUG] Metrics export disabled by organization setting
+2026-03-26T07:32:04.979Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:32:09.114Z [DEBUG] Metadata string for plan-ceo-review:
+2026-03-26T07:32:09.115Z [DEBUG] <command-message>The "plan-ceo-review" skill is running</command-message>
+<command-name>plan-ceo-review</command-name>
+2026-03-26T07:32:09.115Z [DEBUG] command-message tags in metadata: 1
+2026-03-26T07:32:09.146Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:32:09.147Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:32:09.147Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:32:09.155Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:32:09.155Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:32:09.183Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 37ms
+2026-03-26T07:32:09.184Z [DEBUG] processPromptSlashCommand creating 2 messages for plan-ceo-review
+2026-03-26T07:32:09.184Z [DEBUG] Message 1: <command-message>The "plan-ceo-review" skill is running</command-message>
+<command-name>plan-ceo-review</command-name>
+2026-03-26T07:32:09.184Z [DEBUG] Message 2 [META]: [{"type":"text","text":"Base directory for this skill: /home/aryaniyaps/.claude/skills/plan-ceo-review\n\n<!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->\n<!-- Regenerate: bun run ge
+2026-03-26T07:32:09.192Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-26T07:32:09.192Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:09.192Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-26T07:32:09.193Z [DEBUG] FileHistory: Making snapshot for message 17e07b8e-0e09-41b5-b962-bc430822f4ea
+2026-03-26T07:32:09.201Z [DEBUG] FileHistory: Added snapshot for 17e07b8e-0e09-41b5-b962-bc430822f4ea, tracking 1 files
+2026-03-26T07:32:09.219Z [DEBUG] Rendering user message with 1 content blocks
+2026-03-26T07:32:09.219Z [DEBUG] Block 0: <command-message>The "plan-ceo-review" skill is running</command-message>
+<command-name>plan-ceo-rev...
+2026-03-26T07:32:09.220Z [DEBUG] UserCommandMessage rendering: "The "plan-ceo-review" skill is running" (args: "none")
+2026-03-26T07:32:09.220Z [DEBUG] isSkillFormat: true, prefix: ""
+2026-03-26T07:32:09.254Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-03-26T07:32:09.267Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 13ms
+2026-03-26T07:32:24.140Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:32:24.140Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:32:24.140Z [DEBUG] Metrics export disabled by organization setting
+2026-03-26T07:32:33.812Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:32:34.012Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:32:34.024Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:32:34.024Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:34.024Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:32:34.161Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:32:34.162Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:32:34.162Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:32:34.167Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:32:34.167Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:32:34.182Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 21ms
+2026-03-26T07:32:37.280Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:32:37.386Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:32:37.395Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:32:37.395Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:37.395Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:32:37.484Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:32:37.484Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:37.484Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:32:37.520Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:32:37.521Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:32:37.521Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:32:37.526Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:32:37.526Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:32:37.554Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 34ms
+2026-03-26T07:32:38.580Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:32:41.455Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:32:41.606Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:32:41.613Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:32:41.613Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:41.613Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:32:43.052Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:32:43.052Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:43.052Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:32:43.085Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:32:43.085Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:32:43.085Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:32:43.090Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:32:43.090Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:32:43.103Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 18ms
+2026-03-26T07:32:55.159Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:32:55.676Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:32:55.688Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:32:55.688Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:55.688Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:32:55.793Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:32:55.794Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:55.794Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:32:55.830Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:32:55.831Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:32:55.831Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:32:55.836Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:32:55.837Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:32:55.855Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 25ms
+2026-03-26T07:32:57.486Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:32:59.774Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:32:59.867Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:32:59.876Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:32:59.876Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:32:59.876Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:01.064Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:33:01.064Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:01.064Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:01.100Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:33:01.100Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:33:01.100Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:33:01.106Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:33:01.106Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:33:01.126Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 26ms
+2026-03-26T07:33:02.265Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:04.373Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:04.605Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:33:04.616Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:33:04.617Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:04.617Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:05.016Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:33:05.016Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:05.016Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:05.052Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:33:05.053Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:33:05.053Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:33:05.059Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:33:05.059Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:33:05.080Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+2026-03-26T07:33:09.066Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:13.474Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:13.705Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:33:13.714Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:33:13.714Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:13.714Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:16.169Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:16.417Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:33:16.417Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:16.417Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:16.456Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:33:16.457Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:33:16.457Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:33:16.462Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:33:16.462Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:33:16.484Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+2026-03-26T07:33:17.576Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:20.482Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:20.680Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:33:20.690Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:33:20.690Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:20.690Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:20.887Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:33:20.887Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:20.887Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:33:20.923Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:33:20.924Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:33:20.924Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:33:20.929Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:33:20.929Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:33:20.953Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 30ms
+2026-03-26T07:33:22.054Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:41.269Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:33:41.582Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:33:41.595Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-26T07:33:41.607Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:33:41.607Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:41.607Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:33:41.607Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-26T07:33:41.607Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:41.607Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:33:41.728Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:33:41.729Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:41.729Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:33:41.729Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-03-26T07:33:41.729Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:33:41.729Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-26T07:33:41.827Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:33:41.827Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:33:41.827Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:33:41.838Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:33:41.838Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:33:42.361Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 534ms
+2026-03-26T07:33:55.055Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:34:03.663Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:34:03.672Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:34:03.672Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:34:03.672Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:34:03.762Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:34:03.762Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:34:03.762Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:34:03.798Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:34:03.799Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:34:03.799Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:34:03.804Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:34:03.805Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:34:03.821Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 23ms
+2026-03-26T07:34:07.338Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:34:07.417Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-26T07:34:07.424Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-26T07:34:07.424Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:34:07.424Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:34:07.480Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:34:07.528Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-26T07:34:07.528Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:34:07.528Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-26T07:34:07.570Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:34:07.571Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:34:07.571Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:34:07.578Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:34:07.578Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:34:07.613Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 43ms
+2026-03-26T07:34:08.933Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:34:15.130Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:34:33.747Z [DEBUG] Language not supported while highlighting code, falling back to markdown:
+2026-03-26T07:34:33.842Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:34:33.848Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:34:33.848Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:34:33.849Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:34:33.885Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:34:33.893Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:34:33.893Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:34:33.893Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:34:45.718Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:34:45.718Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:34:45.718Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:37:24.190Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:37:24.191Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:37:24.191Z [DEBUG] Metrics export disabled by organization setting
+2026-03-26T07:37:26.079Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-26T07:37:26.100Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2026-03-26T07:37:26.100Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:37:26.100Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:37:26.149Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-03-26T07:37:26.150Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-26T07:37:26.150Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-26T07:37:26.158Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-26T07:37:26.158Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-26T07:37:26.185Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 36ms
+2026-03-26T07:37:41.878Z [DEBUG] Stream started - received first chunk
+2026-03-26T07:38:23.200Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2026-03-26T07:38:23.209Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2026-03-26T07:38:23.209Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:38:23.209Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:38:23.266Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2026-03-26T07:38:23.281Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2026-03-26T07:38:23.281Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:38:23.281Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2026-03-26T07:38:29.321Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-26T07:38:29.322Z [DEBUG] Found 0 hook matchers in settings
+2026-03-26T07:38:29.322Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-26T07:42:24.213Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-26T07:42:24.213Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-26T07:42:24.213Z [DEBUG] Metrics export disabled by organization setting

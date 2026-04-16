@@ -1,0 +1,9 @@
+import Hero from '@/components/Hero';
+
+/**
+ * Homepage - Entry point
+ * Device detection happens client-side in Hero component
+ */
+export default function HomePage() {
+  return <Hero />;
+}

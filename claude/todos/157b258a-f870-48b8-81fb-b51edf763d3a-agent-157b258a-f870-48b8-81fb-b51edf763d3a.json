@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Check current database state and existing migrations",
+    "status": "completed",
+    "activeForm": "Checking current database state and existing migrations"
+  },
+  {
+    "content": "Examine the migration file causing the error",
+    "status": "completed",
+    "activeForm": "Examining the migration file causing the error"
+  },
+  {
+    "content": "Fix the migration conflict by updating schema to include all existing enums",
+    "status": "in_progress",
+    "activeForm": "Fixing the migration conflict by updating schema to include all existing enums"
+  },
+  {
+    "content": "Run the migration successfully",
+    "status": "pending",
+    "activeForm": "Running the migration successfully"
+  }
+]

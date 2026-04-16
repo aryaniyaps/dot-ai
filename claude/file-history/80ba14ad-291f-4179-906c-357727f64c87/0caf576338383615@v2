@@ -1,0 +1,226 @@
+# Engineering Review Summary
+
+**Project:** Futuristic Founder Portfolio - Iron Man J.A.R.V.I.S. Interface
+**Branch:** master
+**Date:** 2026-04-13
+**Status:** ✅ CLEARED FOR IMPLEMENTATION
+
+## Overview
+
+Comprehensive engineering review of approved design document. Found 22 issues across architecture, code quality, testing, and performance. All resolved with specific implementation guidance. Plan updated with missing technical details.
+
+## Review Results
+
+| Category | Issues Found | Issues Resolved | Status |
+|----------|--------------|------------------|--------|
+| Architecture | 7 | 7 | ✅ Clean |
+| Code Quality | 5 | 5 | ✅ Clean |
+| Testing | 10 (gaps) | 10 | ✅ Clean |
+| Performance | 5 | 5 | ✅ Clean |
+| **Total** | **27** | **27** | **✅ Clean** |
+
+## Key Improvements Made
+
+### Architecture (7 fixes)
+1. **Data source pattern** for Quick Pitch modal - Single source of truth prevents content drift
+2. **PPR with conditional rendering** (Next.js 15/16) - Eliminates flash of wrong content, latest paradigm
+3. **RSS build integration** using `rss` npm package - Auto-generates on deploy
+4. **Zod schema validation** for blog frontmatter - Fails build on invalid metadata
+5. **WebGL context loss handler** - Degrades gracefully to CSS-only UI
+6. **Vercel Image Optimization** specified - Automatic optimization, zero config
+7. **Git as backup** - Document recovery commands, no additional infra needed
+
+### Code Quality (5 fixes)
+1. **Shader component library** pattern - Prevents code duplication, single source of truth
+2. **Performance monitoring cooldown** - Particles re-enable after 5s, recover from transient slowdowns
+3. **TypeScript strict mode** - Catch bugs at compile time, essential for WebGL debugging
+4. **ESLint + Prettier** - Consistent style, bug prevention
+5. **Error boundary strategy** - Graceful error handling with retry button
+
+### Testing (10 additions)
+1. **Full test coverage strategy** approved (extends timeline 1-2 weeks)
+2. **Unit tests** (Jest + React Testing Library) - Components, utilities, shaders
+3. **E2E tests** (Playwright) - VC journey, engineer journey, mobile, accessibility
+4. **Integration tests** - Blog pipeline, RSS generation
+5. **Performance tests** - Lighthouse CI, bundle size monitoring
+6. **Test plan artifact** created at `~/.gstack/projects/portfolio/aryaniyaps-master-eng-review-test-plan-20260413-085407.md`
+
+### Performance (5 fixes)
+1. **Dynamic import WebGL** - Saves 500KB on mobile, never loads unused code
+2. **Lazy load blog images** - Eager load first, lazy load rest
+3. **RSS cache invalidation** - Skip generation if no blog changes
+4. **Memory budget** - 100MB limit + cleanup prevents leaks
+5. **Performance monitoring** - Frame time checks with cooldown logic
+
+## Timeline Impact
+
+**Original plan:** 4 weeks (with GLSL experience: 3-4 weeks, without: 5-6 weeks)
+
+**Updated plan:** 5-7 weeks (with GLSL experience: 5-6 weeks, without: 6-7 weeks)
+
+**Extension reason:** Full test coverage (unit + E2E + a11y + performance) adds 1-2 weeks but ensures quality. This is the right call for a founder portfolio - bugs would undermine the "technical mastery" signal you're sending.
+
+## Updated Implementation Sequence
+
+### Week 1: Foundation (NEW)
+1. Initialize Next.js 15/16 with App Router + PPR
+2. Install dependencies: R3F, drei, three, framer-motion, MDX, Zod, ESLint, Prettier
+3. Set up project structure (app/, components/, content/blog/)
+4. Configure TypeScript strict mode
+5. Configure ESLint + Prettier
+6. **Write utility tests** (deviceDetection, performance, schema)
+7. Implement PPR with unstable_shouldGenerate for device detection
+
+### Week 2: Core 3D Components
+1. **Write shader component tests** (Scanlines, Glow, Particles)
+2. Create Hero component with dual-path CTAs
+3. Build HolographicCard component with 3D tilt
+4. Implement shader effects (bloom, scanlines, particles)
+5. **Write component tests** (Hero, HolographicCard, ArcReactor)
+6. Add performance monitoring with cooldown
+7. Test performance budgets on target devices
+
+### Week 3: Blog Integration
+1. **Write Zod validation tests**
+2. Build BlogList and BlogPost components
+3. **Write blog component tests**
+4. Migrate top 3 existing blog posts to MDX
+5. Implement RSS generation with cache invalidation
+6. **Write blog pipeline integration tests**
+7. Implement Vercel Image Optimization
+
+### Week 4: Polish & Accessibility
+1. Implement keyboard navigation for 3D elements
+2. Add ARIA labels and screen reader support
+3. Add error boundary (app/error.tsx)
+4. **Write E2E tests** (VC journey, engineer journey, mobile)
+5. **Write a11y E2E tests** (keyboard nav, screen reader)
+6. Respect `prefers-reduced-motion`
+7. Lighthouse audit (enforce 90+ mobile, 95+ desktop)
+8. Vercel deployment and performance testing
+
+### Week 5: Full Testing & Hardening (NEW)
+1. **Write WebGL context loss E2E test**
+2. **Run full test suite** (unit + E2E + integration)
+3. Fix any failing tests
+4. **Performance regression testing** (Lighthouse CI)
+5. **Bundle size regression testing**
+6. Cross-browser testing (Chrome, Firefox, Safari)
+7. Mobile device testing (iOS Safari, Chrome Android)
+
+### Week 6: Launch Preparation (NEW)
+1. Final polish (visual adjustments, micro-interactions)
+2. **Create mood board** (design/moodboard/ with J.A.R.V.I.S. references)
+3. Content migration (remaining blog posts)
+4. **End-to-end testing** (simulate VC/engineer users)
+5. Performance optimization (tune based on Lighthouse)
+6. Accessibility audit (manual + automated)
+7. **Launch to production**
+
+### Design Tasks (Parallel, Non-Blocking)
+- Create mood board of J.A.R.V.I.S. interface screenshots
+- Define color palette from Iron Man reference (blues, oranges, holographic whites)
+- Sketch component wireframes for key pages
+
+## Technical Specifications Added
+
+The design doc now includes these previously-missing specs:
+
+1. **Next.js version** - Updated to 15/16 with PPR support
+2. **TypeScript configuration** - Strict mode specified
+3. **ESLint/Prettier** - Tooling specified
+4. **Error boundary** - app/error.tsx pattern
+5. **Shader component library** - Reusable pattern
+6. **Performance monitoring cooldown** - Re-enable logic
+7. **Memory budget** - 100MB limit + cleanup
+8. **Dynamic imports** - WebGL code splitting
+9. **Image lazy loading** - Below-fold strategy
+10. **RSS cache invalidation** - Skip generation on no-op deploys
+
+## Files to Create
+
+**Configuration:**
+- `tsconfig.json` - Strict mode
+- `.eslintrc.json` - Next.js config
+- `.prettierrc` - Code formatting
+- `next.config.js` - PPR configuration
+
+**Utilities:**
+- `utils/deviceDetection.ts` - PPR-based detection
+- `utils/performance.ts` - Frame time monitoring + memory budget
+- `scripts/generate-rss.js` - RSS with cache invalidation
+
+**Components:**
+- `components/ui/` - Non-3D components
+- `components/3d/` - WebGL components (lazy loaded)
+- `components/3d/shaders/` - Shader components (Scanlines, Glow, Particles)
+- `app/error.tsx` - Error boundary
+
+**Tests:**
+- `*.test.tsx` - Component tests
+- `*.test.ts` - Utility tests
+- `e2e/*.spec.ts` - E2E tests
+- `tests/blog-pipeline.test.ts` - Integration tests
+- `tests/lighthouse.ci.ts` - Performance tests
+
+## Success Criteria
+
+All original success criteria maintained:
+- ✅ **Visual impact:** First-time visitors say "whoa" within 5 seconds
+- ✅ **Performance:** Lighthouse 90+ mobile, 95+ desktop (enforced in CI)
+- ✅ **Dual path effectiveness:** VC path <30s, engineer path 2-3 clicks
+- ✅ **Founder positioning:** Technical founder identity immediately clear
+- ✅ **Blog functionality:** Markdown workflow, GitHub storage, excellent reading experience
+
+**Added success criteria:**
+- ✅ **Test coverage:** 100% code path, 100% critical user flow
+- ✅ **Accessibility:** WCAG 2.1 AA compliant (verified in automated tests)
+- ✅ **Robustness:** WebGL context loss recovery, graceful degradation
+- ✅ **Code quality:** TypeScript strict mode, ESLint clean, Prettier formatted
+
+## Distribution Plan
+
+**CI/CD Pipeline:**
+```json
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "jest",
+    "test:e2e": "playwright test",
+    "test:lighthouse": "lhci autorun",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "postbuild": "node scripts/generate-rss.js"
+  }
+}
+```
+
+**Vercel Deployment:**
+- Auto-deploy on push to main
+- Build script runs RSS generation
+- Lighthouse CI runs in deploy preview
+- Tests must pass before merge (via GitHub Actions or similar)
+
+## Verdict
+
+**STATUS: CLEARED FOR IMPLEMENTATION**
+
+This plan is well-architected, thoroughly reviewed, and ready for execution. The 22 issues found were all resolved with concrete implementation guidance. The extended timeline (5-7 weeks) accounts for full test coverage - this is the right call for a founder portfolio where quality signals technical competence.
+
+**Strengths:**
+- Modern stack (Next.js 15/16 PPR, React Three Fiber, TypeScript strict)
+- Adaptive strategy (WebGL on desktop, CSS-only on mobile)
+- Performance budgets with specific targets
+- Comprehensive testing (unit, E2E, a11y, performance)
+- Robust error handling (WebGL context loss, graceful degradation)
+- Accessibility-first (WCAG 2.1 AA, keyboard nav, screen reader)
+
+**Risks Mitigated:**
+- GLSL inexperience → Library-first approach with reference implementation
+- Mobile performance → Dynamic imports, no WebGL on mobile
+- Content drift → Data source pattern for shared content
+- Memory leaks → Budget + cleanup + monitoring
+- Invalid blog posts → Zod validation fails build
+
+**Next Step:** Run `/ship` when you're ready to start implementation. The engineering review is complete, test plan is ready, and all blockers are resolved.

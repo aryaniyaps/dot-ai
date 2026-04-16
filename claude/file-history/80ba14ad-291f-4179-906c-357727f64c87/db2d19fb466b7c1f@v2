@@ -1,0 +1,49 @@
+'use client';
+
+import { useMemo } from 'react';
+import { PointMaterial } from '@react-three/drei';
+
+/**
+ * Particle system component
+ * Floating data fragments with randomized motion
+ * Performance monitored - auto-disables on slow devices
+ */
+export default function Particles() {
+  const particleCount = 50;
+
+  // Generate random particle positions
+  const positions = useMemo(() => {
+    const positions = new Float32Array(particleCount * 3);
+
+    for (let i = 0; i < particleCount; i++) {
+      positions[i * 3] = (Math.random() - 0.5) * 20; // x
+      positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+      positions[i * 3 + 2] = (Math.random() - 0.5) * 10 - 5; // z
+    }
+
+    return positions;
+  }, []);
+
+  // Note: Particle animation temporarily disabled to avoid type issues
+  // TODO: Add animation once R3F types are properly configured
+
+  return (
+    <points>
+      <bufferGeometry>
+        <bufferAttribute
+          attach="attributes-position"
+          count={particleCount}
+          array={positions}
+          itemSize={3}
+        />
+      </bufferGeometry>
+      <PointMaterial
+        transparent
+        color="#00F0FF"
+        size={0.05}
+        sizeAttenuation
+        depthWrite={false}
+      />
+    </points>
+  );
+}

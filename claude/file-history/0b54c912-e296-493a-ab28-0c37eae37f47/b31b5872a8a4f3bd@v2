@@ -1,0 +1,37 @@
+# ~/.config/tmuxinator/moodle-proctor.yml
+# Tmuxinator config for moodle-proctor development
+# Usage: tmuxinator start moodle-proctor
+
+name: moodle-proctor
+root: ~/web-projects/moodle-proctor
+
+windows:
+  - backend:
+      root: ~/web-projects/moodle-proctor/backend
+      layout: main-vertical
+      panes:
+        - backend:
+            - npm run dev
+        - backend-logs:
+            - sleep 2
+            - tail -f logs/*.log 2>/dev/null || echo "No logs yet..."
+
+  - frontend:
+      root: ~/web-projects/moodle-proctor/frontend
+      layout: main-vertical
+      panes:
+        - frontend:
+            - npm run dev
+        - frontend-logs:
+            - sleep 2
+            - echo "Frontend logs will appear here"
+
+  - docker:
+      root: ~/web-projects/moodle-proctor
+      layout: even-horizontal
+      panes:
+        - docker-status:
+            - watch -n 5 'docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
+        - docker-logs:
+            - echo "Use: docker logs -f <container-name>"
+            - echo "Containers: moodle-proctor-db, ai-proctoring-service, local-moodle"

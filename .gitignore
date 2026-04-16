@@ -1,0 +1,31 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Git / temp logs
+*.log
+tmp/
+temp/
+
+# Env / secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+tokens/
+credentials/
+
+# Python / Node junk in case scripts evolve
+__pycache__/
+*.pyc
+node_modules/
+
+# Optional local notes
+.local/
+private/

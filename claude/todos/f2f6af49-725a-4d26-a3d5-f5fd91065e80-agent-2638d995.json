@@ -1,0 +1,52 @@
+[
+  {
+    "content": "Create user profiles database table with Drizzle schema",
+    "status": "pending",
+    "activeForm": "Create user profiles database table with Drizzle schema"
+  },
+  {
+    "content": "Add onboarding status tracking to users table",
+    "status": "pending",
+    "activeForm": "Add onboarding status tracking to users table"
+  },
+  {
+    "content": "Install and configure XState for form state management",
+    "status": "pending",
+    "activeForm": "Install and configure XState for form state management"
+  },
+  {
+    "content": "Create onboarding tRPC router with CRUD procedures",
+    "status": "pending",
+    "activeForm": "Create onboarding tRPC router with CRUD procedures"
+  },
+  {
+    "content": "Create multi-step onboarding form components",
+    "status": "pending",
+    "activeForm": "Create multi-step onboarding form components"
+  },
+  {
+    "content": "Implement Next.js middleware for onboarding redirect logic",
+    "status": "pending",
+    "activeForm": "Implement Next.js middleware for onboarding redirect logic"
+  },
+  {
+    "content": "Create onboarding page routes and layout",
+    "status": "pending",
+    "activeForm": "Create onboarding page routes and layout"
+  },
+  {
+    "content": "Add progress saving and step navigation functionality",
+    "status": "pending",
+    "activeForm": "Add progress saving and step navigation functionality"
+  },
+  {
+    "content": "Update links.ts with onboarding routes",
+    "status": "pending",
+    "activeForm": "Update links.ts with onboarding routes"
+  },
+  {
+    "content": "Create database migration for new tables",
+    "status": "pending",
+    "activeForm": "Create database migration for new tables"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Examine current auth configuration and error",
+    "status": "completed",
+    "activeForm": "Examined current auth configuration and error"
+  },
+  {
+    "content": "Add OAuthAccountNotLinked error handling",
+    "status": "completed",
+    "activeForm": "Added OAuthAccountNotLinked error handling"
+  },
+  {
+    "content": "Update signIn callback to handle account linking",
+    "status": "completed",
+    "activeForm": "Updated signIn callback for account linking"
+  },
+  {
+    "content": "Check if environment variables are configured",
+    "status": "completed",
+    "activeForm": "Checked environment variables configuration"
+  },
+  {
+    "content": "Test auth flow with both providers",
+    "status": "in_progress",
+    "activeForm": "Testing auth flow with Google and LinkedIn"
+  }
+]

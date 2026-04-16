@@ -1,0 +1,68 @@
+/**
+ * Device detection utilities for adaptive rendering
+ * Used to determine WebGL capabilities and mobile/desktop context
+ */
+
+export interface DeviceInfo {
+  isMobile: boolean;
+  isWebGLSupported: boolean;
+  hardwareConcurrency: number;
+  deviceMemory: number | undefined;
+}
+
+/**
+ * Detect if the current device is mobile
+ * Checks screen width and user agent strings
+ */
+export function isMobile(): boolean {
+  if (typeof window === 'undefined') return false;
+
+  const width = window.innerWidth;
+  const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+
+  return width < 768 || /Mobi|Android/i.test(userAgent);
+}
+
+/**
+ * Detect WebGL support
+ * Tests for both WebGL and WebGL2 contexts
+ */
+export function isWebGLSupported(): boolean {
+  if (typeof window === 'undefined') return false;
+
+  const canvas = document.createElement('canvas');
+  const gl = canvas.getContext('webgl2') || canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+  return gl !== null;
+}
+
+/**
+ * Get comprehensive device information
+ * Used for adaptive loading and performance tuning
+ */
+export function getDeviceInfo(): DeviceInfo {
+  if (typeof window === 'undefined') {
+    return {
+      isMobile: false,
+      isWebGLSupported: false,
+      hardwareConcurrency: 4,
+      deviceMemory: undefined,
+    };
+  }
+
+  return {
+    isMobile: isMobile(),
+    isWebGLSupported: isWebGLSupported(),
+    hardwareConcurrency: navigator.hardwareConcurrency || 4,
+    deviceMemory: (navigator as any).deviceMemory,
+  };
+}
+
+/**
+ * Check if device is low-end
+ * Used to disable particles and reduce effects
+ */
+export function isLowEndDevice(): boolean {
+  const device = getDeviceInfo();
+  return device.hardwareConcurrency <= 4 || (device.deviceMemory !== undefined && device.deviceMemory <= 4);
+}

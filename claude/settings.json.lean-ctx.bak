@@ -1,0 +1,25 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "4d9e9ae71fab40b98e9323408434c287.4GDvbN3NZ3SIZT1F",
+    "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/aryaniyaps/.claude/skills/gstack/bin/gstack-session-update"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "impeccable@impeccable": true,
+    "caveman@caveman": true
+  },
+  "skipDangerousModePermissionPrompt": true
+}

@@ -1,0 +1,221 @@
+2026-04-15T07:30:31.731Z [DEBUG] Watching for changes in setting files /home/aryaniyaps/.claude/settings.json, /home/aryaniyaps/web-projects/portfolio/.claude/settings.json...
+2026-04-15T07:30:31.750Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-04-15T07:30:31.751Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-04-15T07:30:31.751Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-04-15T07:30:31.751Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-04-15T07:30:31.751Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-04-15T07:30:31.761Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238231761
+2026-04-15T07:30:31.761Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:31.775Z [DEBUG] Temp file written successfully, size: 14080 bytes
+2026-04-15T07:30:31.775Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:31.775Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238231761 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:31.775Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:31.776Z [DEBUG] Loading plugin caveman from source: "./"
+2026-04-15T07:30:31.778Z [DEBUG] Loading plugin impeccable from source: "./"
+2026-04-15T07:30:31.798Z [DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+2026-04-15T07:30:31.820Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/aryaniyaps/.claude/skills, project=/home/aryaniyaps/web-projects/portfolio/.claude/skills
+2026-04-15T07:30:31.827Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2026-04-15T07:30:31.850Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-04-15T07:30:31.856Z [DEBUG] Creating shell snapshot for zsh (/usr/bin/zsh)
+2026-04-15T07:30:31.856Z [DEBUG] Looking for shell config file: /home/aryaniyaps/.zshrc
+2026-04-15T07:30:31.856Z [DEBUG] Snapshots directory: /home/aryaniyaps/.claude/shell-snapshots
+2026-04-15T07:30:31.857Z [DEBUG] Creating snapshot at: /home/aryaniyaps/.claude/shell-snapshots/snapshot-zsh-1776238231856-s9l2b2.sh
+2026-04-15T07:30:31.857Z [DEBUG] Shell binary exists: true
+2026-04-15T07:30:31.857Z [DEBUG] Execution timeout: 10000ms
+2026-04-15T07:30:31.859Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/0793583e-f494-490c-8c50-1a4a1398cee7-agent-0793583e-f494-490c-8c50-1a4a1398cee7.json.tmp.13450.1776238231859
+2026-04-15T07:30:31.866Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-04-15T07:30:31.866Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/0793583e-f494-490c-8c50-1a4a1398cee7-agent-0793583e-f494-490c-8c50-1a4a1398cee7.json.tmp.13450.1776238231859 to /home/aryaniyaps/.claude/todos/0793583e-f494-490c-8c50-1a4a1398cee7-agent-0793583e-f494-490c-8c50-1a4a1398cee7.json
+2026-04-15T07:30:31.866Z [DEBUG] File /home/aryaniyaps/.claude/todos/0793583e-f494-490c-8c50-1a4a1398cee7-agent-0793583e-f494-490c-8c50-1a4a1398cee7.json written atomically
+2026-04-15T07:30:31.871Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238231871
+2026-04-15T07:30:31.872Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:31.879Z [DEBUG] Temp file written successfully, size: 13679 bytes
+2026-04-15T07:30:31.879Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:31.879Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238231871 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:31.879Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:31.880Z [DEBUG] getPluginSkills: Processing 2 enabled plugins
+2026-04-15T07:30:31.880Z [DEBUG] Checking plugin caveman: skillsPath=exists, skillsPaths=0 paths
+2026-04-15T07:30:31.880Z [DEBUG] Attempting to load skills from plugin caveman default skillsPath: /home/aryaniyaps/.claude/plugins/marketplaces/caveman/skills
+2026-04-15T07:30:31.882Z [DEBUG] Loading hooks from plugin: caveman
+2026-04-15T07:30:31.882Z [DEBUG] Registered 2 hooks from 2 plugins
+2026-04-15T07:30:31.883Z [DEBUG] Loaded 39 unique skills (managed: 0, user: 39, project: 0, duplicates removed: 0)
+2026-04-15T07:30:31.883Z [DEBUG] Loaded 5 skills from plugin caveman default directory
+2026-04-15T07:30:31.883Z [DEBUG] Checking plugin impeccable: skillsPath=none, skillsPaths=1 paths
+2026-04-15T07:30:31.883Z [DEBUG] Attempting to load skills from plugin impeccable skillsPaths: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills
+2026-04-15T07:30:31.883Z [DEBUG] Loading from skillPath: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills for plugin impeccable
+2026-04-15T07:30:31.885Z [DEBUG] Total plugin commands loaded: 0
+2026-04-15T07:30:31.885Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-04-15T07:30:31.885Z [DEBUG] Loaded 21 skills from plugin impeccable custom path: /home/aryaniyaps/.claude/plugins/marketplaces/impeccable/.claude/skills
+2026-04-15T07:30:31.885Z [DEBUG] Total plugin skills loaded: 26
+2026-04-15T07:30:31.885Z [DEBUG] getSkills returning: 39 skill dir commands, 26 plugin skills
+2026-04-15T07:30:31.885Z [DEBUG] Total plugin agents loaded: 0
+2026-04-15T07:30:31.899Z [DEBUG] MCP server "lean-ctx": Starting connection with timeout of 30000ms
+2026-04-15T07:30:31.906Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238231906
+2026-04-15T07:30:31.906Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:31.914Z [DEBUG] Temp file written successfully, size: 13679 bytes
+2026-04-15T07:30:31.914Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:31.914Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238231906 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:31.914Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:31.924Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-04-15T07:30:31.924Z [DEBUG] Found 1 hook matchers in settings
+2026-04-15T07:30:31.924Z [DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+2026-04-15T07:30:31.936Z [DEBUG] Summarizing all 9 messages (~0 tokens)
+2026-04-15T07:30:31.941Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238231941
+2026-04-15T07:30:31.941Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:31.955Z [DEBUG] Temp file written successfully, size: 13679 bytes
+2026-04-15T07:30:31.955Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:31.955Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238231941 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:31.955Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:31.968Z [DEBUG] Total LSP servers loaded: 0
+2026-04-15T07:30:31.968Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-04-15T07:30:31.968Z [DEBUG] LSP manager initialized with 0 servers
+2026-04-15T07:30:32.007Z [DEBUG] LSP server manager initialized successfully
+2026-04-15T07:30:32.007Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-04-15T07:30:32.053Z [DEBUG] Git remote URL: https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:30:32.053Z [DEBUG] Parsed repository: aryaniyaps/portfolio from https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:30:32.053Z [DEBUG] Parsed repository: aryaniyaps/portfolio from URL: https://github.com/aryaniyaps/portfolio.git
+2026-04-15T07:30:32.053Z [DEBUG] Path /home/aryaniyaps/web-projects/portfolio already tracked for repo aryaniyaps/portfolio
+2026-04-15T07:30:32.117Z [DEBUG] MCP server "lean-ctx": Successfully connected to stdio server in 224ms
+2026-04-15T07:30:32.117Z [DEBUG] MCP server "lean-ctx": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"lean-ctx","version":"3.1.2"}}
+2026-04-15T07:30:32.137Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-04-15T07:30:32.137Z [DEBUG] Found 0 hook matchers in settings
+2026-04-15T07:30:32.137Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-04-15T07:30:32.138Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-04-15T07:30:32.138Z [DEBUG] Found 0 hook matchers in settings
+2026-04-15T07:30:32.138Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-04-15T07:30:32.260Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238232260
+2026-04-15T07:30:32.260Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:32.274Z [DEBUG] Temp file written successfully, size: 13571 bytes
+2026-04-15T07:30:32.274Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:32.274Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238232260 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:32.274Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:32.283Z [DEBUG] performStartupChecks called
+2026-04-15T07:30:32.283Z [DEBUG] Starting background plugin installations
+2026-04-15T07:30:32.284Z [DEBUG] performBackgroundPluginInstallations called
+2026-04-15T07:30:32.597Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238232597
+2026-04-15T07:30:32.597Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:32.605Z [DEBUG] Temp file written successfully, size: 13679 bytes
+2026-04-15T07:30:32.605Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:32.605Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238232597 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:32.605Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:32.606Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-04-15T07:30:32.894Z [DEBUG] Found 2 enabled plugins
+2026-04-15T07:30:32.895Z [DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+2026-04-15T07:30:32.895Z [DEBUG] Loaded 2 installed plugins from /home/aryaniyaps/.claude/plugins/installed_plugins.json (schema version 1)
+2026-04-15T07:30:32.895Z [DEBUG] Plugin caveman@caveman already in installed_plugins.json, skipping
+2026-04-15T07:30:32.895Z [DEBUG] Plugin impeccable@impeccable already in installed_plugins.json, skipping
+2026-04-15T07:30:32.905Z [DEBUG] Saved 2 installed plugins to /home/aryaniyaps/.claude/plugins/installed_plugins.json (schema version 1)
+2026-04-15T07:30:32.905Z [DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 2 skipped)
+2026-04-15T07:30:32.905Z [DEBUG] Found 2 installed plugins
+2026-04-15T07:30:32.913Z [DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-04-15T07:30:32.913Z [DEBUG] Found 0 missing plugins (not installed):
+2026-04-15T07:30:32.913Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-04-15T07:30:32.948Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-04-15T07:30:32.985Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238232985
+2026-04-15T07:30:32.985Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:32.995Z [DEBUG] Temp file written successfully, size: 13679 bytes
+2026-04-15T07:30:32.995Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:32.995Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238232985 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:32.996Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:32.999Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/aryaniyaps/.local/share/claude/versions/2.0.50)
+2026-04-15T07:30:33.018Z [DEBUG] Shell snapshot created successfully (186152 bytes)
+2026-04-15T07:30:33.018Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 73ms
+2026-04-15T07:30:33.019Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code VSCode MCP","version":"2.1.101"}}
+2026-04-15T07:30:33.696Z [DEBUG] Stream started - received first chunk
+2026-04-15T07:30:33.810Z [ERROR] Error streaming, falling back to non-streaming mode: {"error":{"code":"1313","message":"Your account's current usage pattern does not comply with the Fair Usage Policy, and your request frequency has been limited. For details, please refer to the Agreement and Terms – Subscription Service Agreement. To restore access, please go to the top of the Console → Coding Plan → Personal Package Overview page and submit a request to lift the restriction."},"request_id":"202604151530329823803741cd46df"}
+2026-04-15T07:30:37.041Z [DEBUG] Stream started - received first chunk
+2026-04-15T07:30:37.047Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-04-15T07:30:37.047Z [DEBUG] Found 0 hook matchers in settings
+2026-04-15T07:30:37.047Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-04-15T07:30:37.119Z [DEBUG] Stream started - received first chunk
+2026-04-15T07:30:37.123Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238237123
+2026-04-15T07:30:37.123Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:30:37.131Z [DEBUG] Temp file written successfully, size: 14351 bytes
+2026-04-15T07:30:37.131Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:30:37.131Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238237123 to /home/aryaniyaps/.claude.json
+2026-04-15T07:30:37.131Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-04-15T07:30:42.897Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-04-15T07:30:42.897Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-04-15T07:30:42.903Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-04-15T07:30:42.903Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-04-15T07:30:42.943Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-04-15T07:30:42.943Z [DEBUG] Found 1 hook matchers in settings
+2026-04-15T07:30:42.943Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2026-04-15T07:30:42.982Z [DEBUG] FileHistory: Added snapshot for 90434ac0-5293-4663-8471-e2db28ecba1f, tracking 0 files
+2026-04-15T07:30:43.016Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-04-15T07:30:43.020Z [DEBUG] Total plugin output styles loaded: 0
+2026-04-15T07:30:43.023Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 7ms
+2026-04-15T07:30:43.040Z [DEBUG] Slash commands included in SlashCommand tool:
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "caveman:caveman" (userFacingName="caveman")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "caveman:caveman-review" (userFacingName="caveman-review")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "caveman:compress" (userFacingName="caveman-compress")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "caveman:caveman-commit" (userFacingName="caveman-commit")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "caveman:caveman-help" (userFacingName="caveman-help")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "impeccable:animate" (userFacingName="animate")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "impeccable:clarify" (userFacingName="clarify")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "impeccable:distill" (userFacingName="distill")
+2026-04-15T07:30:43.040Z [DEBUG] Skill prompt: showing "impeccable:frontend-design" (userFacingName="frontend-design")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:critique" (userFacingName="critique")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:normalize" (userFacingName="normalize")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:audit" (userFacingName="audit")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:teach-impeccable" (userFacingName="teach-impeccable")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:extract" (userFacingName="extract")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:overdrive" (userFacingName="overdrive")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:adapt" (userFacingName="adapt")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:delight" (userFacingName="delight")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:arrange" (userFacingName="arrange")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:colorize" (userFacingName="colorize")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:typeset" (userFacingName="typeset")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:harden" (userFacingName="harden")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:onboard" (userFacingName="onboard")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:optimize" (userFacingName="optimize")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:polish" (userFacingName="polish")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:bolder" (userFacingName="bolder")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:quieter" (userFacingName="quieter")
+2026-04-15T07:30:43.041Z [DEBUG] Skills and commands included in Skill tool: design-html, plan-ceo-review, gstack, gstack-upgrade, careful, review, guard, design-shotgun, plan-eng-review, qa, open-gstack-browser, ship, investigate, open-gstack-browser, codex, document-release, devex-review, freeze, plan-devex-review, office-hours, retro, canary, health, benchmark, pair-agent, design-review, design-consultation, browse, gstack, learn, qa-only, setup-deploy, plan-design-review, autoplan, checkpoint, unfreeze, setup-browser-cookies, land-and-deploy, cso, caveman, caveman-review, caveman-compress, caveman-commit, caveman-help, animate, clarify, distill, frontend-design, critique, normalize, audit, teach-impeccable, extract, overdrive, adapt, delight, arrange, colorize, typeset, harden, onboard, optimize, polish, bolder, quieter
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "caveman:caveman" (userFacingName="caveman")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "caveman:caveman-review" (userFacingName="caveman-review")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "caveman:compress" (userFacingName="caveman-compress")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "caveman:caveman-commit" (userFacingName="caveman-commit")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "caveman:caveman-help" (userFacingName="caveman-help")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:animate" (userFacingName="animate")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:clarify" (userFacingName="clarify")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:distill" (userFacingName="distill")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:frontend-design" (userFacingName="frontend-design")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:critique" (userFacingName="critique")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:normalize" (userFacingName="normalize")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:audit" (userFacingName="audit")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:teach-impeccable" (userFacingName="teach-impeccable")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:extract" (userFacingName="extract")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:overdrive" (userFacingName="overdrive")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:adapt" (userFacingName="adapt")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:delight" (userFacingName="delight")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:arrange" (userFacingName="arrange")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:colorize" (userFacingName="colorize")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:typeset" (userFacingName="typeset")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:harden" (userFacingName="harden")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:onboard" (userFacingName="onboard")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:optimize" (userFacingName="optimize")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:polish" (userFacingName="polish")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:bolder" (userFacingName="bolder")
+2026-04-15T07:30:43.041Z [DEBUG] Skill prompt: showing "impeccable:quieter" (userFacingName="quieter")
+2026-04-15T07:30:44.401Z [DEBUG] Stream started - received first chunk
+2026-04-15T07:30:45.898Z [ERROR] Error streaming, falling back to non-streaming mode: {"error":{"code":"1313","message":"Your account's current usage pattern does not comply with the Fair Usage Policy, and your request frequency has been limited. For details, please refer to the Agreement and Terms – Subscription Service Agreement. To restore access, please go to the top of the Console → Coding Plan → Personal Package Overview page and submit a request to lift the restriction."},"request_id":"2026041515304491de0dbf51654122"}
+2026-04-15T07:31:00.744Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-04-15T07:31:00.744Z [DEBUG] Found 0 hook matchers in settings
+2026-04-15T07:31:00.744Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2026-04-15T07:31:00.749Z [DEBUG] MCP server "lean-ctx": Sending SIGINT to MCP server process
+2026-04-15T07:31:00.750Z [DEBUG] Cleaned up session snapshot: /home/aryaniyaps/.claude/shell-snapshots/snapshot-zsh-1776238231856-s9l2b2.sh
+2026-04-15T07:31:00.768Z [DEBUG] LSP server manager shut down successfully
+2026-04-15T07:31:00.772Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-04-15T07:31:00.772Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-04-15T07:31:00.772Z [DEBUG] Metrics export disabled by organization setting
+2026-04-15T07:31:00.773Z [DEBUG] BigQuery metrics exporter flush complete
+2026-04-15T07:31:00.773Z [DEBUG] BigQuery metrics exporter flush complete
+2026-04-15T07:31:00.773Z [DEBUG] BigQuery metrics exporter shutdown complete
+2026-04-15T07:31:00.812Z [DEBUG] MCP server "lean-ctx": MCP server process exited cleanly
+2026-04-15T07:31:00.815Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.13450.1776238260815
+2026-04-15T07:31:00.815Z [DEBUG] Preserving file permissions: 100644
+2026-04-15T07:31:00.824Z [DEBUG] Temp file written successfully, size: 14752 bytes
+2026-04-15T07:31:00.824Z [DEBUG] Applied original permissions to temp file
+2026-04-15T07:31:00.824Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.13450.1776238260815 to /home/aryaniyaps/.claude.json
+2026-04-15T07:31:00.824Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically

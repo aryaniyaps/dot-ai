@@ -1,0 +1,36 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "4d9e9ae71fab40b98e9323408434c287.4GDvbN3NZ3SIZT1F",
+    "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook rewrite"
+          }
+        ]
+      },
+      {
+        "matcher": "Read|read|ReadFile|read_file|View|view|Grep|grep|Search|search|ListFiles|list_files|ListDirectory|list_directory",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook redirect"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "caveman@caveman": true,
+    "impeccable@impeccable": true,
+    "claude-mem@thedotmack": true
+  },
+  "skipDangerousModePermissionPrompt": true
+}

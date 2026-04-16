@@ -1,0 +1,184 @@
+2026-03-25T14:51:22.461Z [DEBUG] Watching for changes in setting files /home/aryaniyaps/.claude/settings.json...
+2026-03-25T14:51:22.486Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-25T14:51:22.487Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-25T14:51:22.487Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-25T14:51:22.487Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-03-25T14:51:22.487Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-03-25T14:51:22.490Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-03-25T14:51:22.494Z [DEBUG] Total LSP servers loaded: 0
+2026-03-25T14:51:22.499Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450282499
+2026-03-25T14:51:22.499Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:22.525Z [DEBUG] Temp file written successfully, size: 48605 bytes
+2026-03-25T14:51:22.526Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:22.526Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450282499 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:22.526Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:22.528Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-25T14:51:22.528Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-25T14:51:22.528Z [DEBUG] LSP server manager initialized successfully
+2026-03-25T14:51:22.529Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-25T14:51:22.570Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/aryaniyaps/.claude/skills, project=/home/aryaniyaps/web-projects/moodle-proctor/.claude/skills
+2026-03-25T14:51:22.571Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2026-03-25T14:51:22.583Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-25T14:51:22.589Z [DEBUG] Creating shell snapshot for zsh (/usr/bin/zsh)
+2026-03-25T14:51:22.589Z [DEBUG] Looking for shell config file: /home/aryaniyaps/.zshrc
+2026-03-25T14:51:22.590Z [DEBUG] Snapshots directory: /home/aryaniyaps/.claude/shell-snapshots
+2026-03-25T14:51:22.591Z [DEBUG] Creating snapshot at: /home/aryaniyaps/.claude/shell-snapshots/snapshot-zsh-1774450282590-0azj6m.sh
+2026-03-25T14:51:22.591Z [DEBUG] Shell binary exists: true
+2026-03-25T14:51:22.591Z [DEBUG] Execution timeout: 10000ms
+2026-03-25T14:51:22.593Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/todos/2da9344e-18fd-455a-877f-ac1b4e595888-agent-2da9344e-18fd-455a-877f-ac1b4e595888.json.tmp.6349.1774450282593
+2026-03-25T14:51:22.605Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-03-25T14:51:22.605Z [DEBUG] Renaming /home/aryaniyaps/.claude/todos/2da9344e-18fd-455a-877f-ac1b4e595888-agent-2da9344e-18fd-455a-877f-ac1b4e595888.json.tmp.6349.1774450282593 to /home/aryaniyaps/.claude/todos/2da9344e-18fd-455a-877f-ac1b4e595888-agent-2da9344e-18fd-455a-877f-ac1b4e595888.json
+2026-03-25T14:51:22.605Z [DEBUG] File /home/aryaniyaps/.claude/todos/2da9344e-18fd-455a-877f-ac1b4e595888-agent-2da9344e-18fd-455a-877f-ac1b4e595888.json written atomically
+2026-03-25T14:51:22.611Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-03-25T14:51:22.611Z [DEBUG] Total plugin skills loaded: 0
+2026-03-25T14:51:22.611Z [DEBUG] Total plugin commands loaded: 0
+2026-03-25T14:51:22.611Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-03-25T14:51:22.613Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2026-03-25T14:51:22.613Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-25T14:51:22.614Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2026-03-25T14:51:22.614Z [DEBUG] Total plugin agents loaded: 0
+2026-03-25T14:51:22.755Z [DEBUG] Git remote URL: https://github.com/aryaniyaps/moodle-proctor
+2026-03-25T14:51:22.755Z [DEBUG] Parsed repository: aryaniyaps/moodle-proctor from https://github.com/aryaniyaps/moodle-proctor
+2026-03-25T14:51:22.755Z [DEBUG] Parsed repository: aryaniyaps/moodle-proctor from URL: https://github.com/aryaniyaps/moodle-proctor
+2026-03-25T14:51:22.757Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450282757
+2026-03-25T14:51:22.757Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:22.769Z [DEBUG] Temp file written successfully, size: 48700 bytes
+2026-03-25T14:51:22.769Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:22.769Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450282757 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:22.769Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:22.770Z [DEBUG] Added /home/aryaniyaps/web-projects/moodle-proctor to tracked paths for repo aryaniyaps/moodle-proctor
+2026-03-25T14:51:22.792Z [DEBUG] Acquired lock on running version: /home/aryaniyaps/.local/share/claude/versions/2.0.50
+2026-03-25T14:51:22.820Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450282820
+2026-03-25T14:51:22.820Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:22.830Z [DEBUG] Temp file written successfully, size: 48700 bytes
+2026-03-25T14:51:22.831Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:22.831Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450282820 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:22.831Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:23.650Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/aryaniyaps/.local/share/claude/versions/2.0.50)
+2026-03-25T14:51:23.661Z [DEBUG] Shell snapshot created successfully (184765 bytes)
+2026-03-25T14:51:25.025Z [DEBUG] Stream started - received first chunk
+2026-03-25T14:51:25.031Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450285031
+2026-03-25T14:51:25.031Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:25.045Z [DEBUG] Temp file written successfully, size: 49279 bytes
+2026-03-25T14:51:25.045Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:25.045Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450285031 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:25.045Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:36.196Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450296196
+2026-03-25T14:51:36.196Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:36.204Z [DEBUG] Temp file written successfully, size: 49278 bytes
+2026-03-25T14:51:36.204Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:36.204Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450296196 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:36.204Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:36.227Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450296227
+2026-03-25T14:51:36.227Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:36.235Z [DEBUG] Temp file written successfully, size: 49278 bytes
+2026-03-25T14:51:36.235Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:36.235Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450296227 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:36.235Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:36.243Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-25T14:51:36.243Z [DEBUG] Found 0 hook matchers in settings
+2026-03-25T14:51:36.243Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-25T14:51:36.319Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450296319
+2026-03-25T14:51:36.320Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:36.327Z [DEBUG] Temp file written successfully, size: 49170 bytes
+2026-03-25T14:51:36.328Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:36.328Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450296319 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:36.328Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:36.334Z [DEBUG] performStartupChecks called
+2026-03-25T14:51:36.334Z [DEBUG] Starting background plugin installations
+2026-03-25T14:51:36.334Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-25T14:51:36.624Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450296624
+2026-03-25T14:51:36.624Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:36.632Z [DEBUG] Temp file written successfully, size: 49278 bytes
+2026-03-25T14:51:36.632Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:36.632Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450296624 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:36.632Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:36.632Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-25T14:51:36.099Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-03-25T14:51:36.110Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-25T14:51:36.128Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-03-25T14:51:36.158Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-03-25T14:51:36.158Z [DEBUG] Found 0 hook matchers in settings
+2026-03-25T14:51:36.159Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-03-25T14:51:36.159Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-03-25T14:51:36.159Z [DEBUG] Found 0 hook matchers in settings
+2026-03-25T14:51:36.159Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-03-25T14:51:36.203Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 81ms
+2026-03-25T14:51:36.204Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code VSCode MCP","version":"2.1.47"}}
+2026-03-25T14:51:35.631Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450295631
+2026-03-25T14:51:35.631Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:35.639Z [DEBUG] Temp file written successfully, size: 49278 bytes
+2026-03-25T14:51:35.639Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:35.639Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450295631 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:35.640Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:37.296Z [INFO] SSH not configured for GitHub, using HTTPS for pbakaus/impeccable
+2026-03-25T14:51:37.305Z [DEBUG] Stream started - received first chunk
+2026-03-25T14:51:37.784Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-03-25T14:51:37.784Z [DEBUG] Found 0 hook matchers in settings
+2026-03-25T14:51:37.785Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-25T14:51:39.163Z [DEBUG] Added marketplace source: impeccable
+2026-03-25T14:51:39.164Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-03-25T14:51:39.164Z [DEBUG] Total plugin commands loaded: 0
+2026-03-25T14:51:39.164Z [DEBUG] Total plugin agents loaded: 0
+2026-03-25T14:51:39.190Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-25T14:51:39.192Z [DEBUG] FileHistory: Added snapshot for 16944bf3-36c9-4710-86d1-1f136adc850f, tracking 0 files
+2026-03-25T14:51:39.209Z [DEBUG] Rendering user message with 1 content blocks
+2026-03-25T14:51:39.209Z [DEBUG] Block 0: <command-name>/plugin</command-name>
+            <command-message>plugin</command-message>
+         ...
+2026-03-25T14:51:39.210Z [DEBUG] UserCommandMessage rendering: "plugin" (args: "marketplace add pbakaus/impeccable")
+2026-03-25T14:51:39.210Z [DEBUG] isSkillFormat: false, prefix: "/"
+2026-03-25T14:51:39.264Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450299264
+2026-03-25T14:51:39.264Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:39.285Z [DEBUG] Temp file written successfully, size: 49278 bytes
+2026-03-25T14:51:39.285Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:39.285Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450299264 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:39.285Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:42.448Z [DEBUG] Stream started - received first chunk
+2026-03-25T14:51:45.459Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-25T14:51:46.886Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-03-25T14:51:46.886Z [DEBUG] Found 0 hook matchers in settings
+2026-03-25T14:51:46.886Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-25T14:51:49.245Z [DEBUG] Loaded 2 installed plugins from /home/aryaniyaps/.claude/plugins/installed_plugins.json (schema version 1)
+2026-03-25T14:51:54.741Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude/settings.json.tmp.6349.1774450314741
+2026-03-25T14:51:54.742Z [DEBUG] Preserving file permissions: 100644
+2026-03-25T14:51:54.749Z [DEBUG] Temp file written successfully, size: 306 bytes
+2026-03-25T14:51:54.749Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:54.749Z [DEBUG] Renaming /home/aryaniyaps/.claude/settings.json.tmp.6349.1774450314741 to /home/aryaniyaps/.claude/settings.json
+2026-03-25T14:51:54.749Z [DEBUG] File /home/aryaniyaps/.claude/settings.json written atomically
+2026-03-25T14:51:54.757Z [DEBUG] Loading plugin impeccable from source: "./"
+2026-03-25T14:51:54.758Z [DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+2026-03-25T14:51:54.758Z [DEBUG] Total plugin commands loaded: 0
+2026-03-25T14:51:54.758Z [DEBUG] Total plugin agents loaded: 0
+2026-03-25T14:51:54.773Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-03-25T14:51:54.774Z [DEBUG] FileHistory: Making snapshot for message 2dc9019e-925b-4267-97eb-bc515108c649
+2026-03-25T14:51:54.774Z [DEBUG] FileHistory: Added snapshot for 2dc9019e-925b-4267-97eb-bc515108c649, tracking 0 files
+2026-03-25T14:51:54.787Z [DEBUG] Rendering user message with 1 content blocks
+2026-03-25T14:51:54.787Z [DEBUG] Block 0: <command-name>/plugin</command-name>
+            <command-message>plugin</command-message>
+         ...
+2026-03-25T14:51:54.787Z [DEBUG] UserCommandMessage rendering: "plugin" (args: "none")
+2026-03-25T14:51:54.787Z [DEBUG] isSkillFormat: false, prefix: "/"
+2026-03-25T14:51:54.831Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450314831
+2026-03-25T14:51:54.831Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:54.839Z [DEBUG] Temp file written successfully, size: 49278 bytes
+2026-03-25T14:51:54.839Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:54.839Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450314831 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:54.840Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
+2026-03-25T14:51:57.856Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-03-25T14:51:57.856Z [DEBUG] Found 0 hook matchers in settings
+2026-03-25T14:51:57.856Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2026-03-25T14:51:57.859Z [DEBUG] Cleaned up session snapshot: /home/aryaniyaps/.claude/shell-snapshots/snapshot-zsh-1774450282590-0azj6m.sh
+2026-03-25T14:51:57.863Z [DEBUG] LSP server manager shut down successfully
+2026-03-25T14:51:57.865Z [DEBUG] Metrics opt-out check failed: No API key available
+2026-03-25T14:51:57.865Z [DEBUG] Metrics check failed, defaulting to disabled
+2026-03-25T14:51:57.866Z [DEBUG] Metrics export disabled by organization setting
+2026-03-25T14:51:57.866Z [DEBUG] BigQuery metrics exporter flush complete
+2026-03-25T14:51:57.866Z [DEBUG] BigQuery metrics exporter flush complete
+2026-03-25T14:51:57.866Z [DEBUG] BigQuery metrics exporter shutdown complete
+2026-03-25T14:51:57.870Z [DEBUG] Writing to temp file: /home/aryaniyaps/.claude.json.tmp.6349.1774450317870
+2026-03-25T14:51:57.870Z [DEBUG] Preserving file permissions: 100600
+2026-03-25T14:51:57.880Z [DEBUG] Temp file written successfully, size: 49717 bytes
+2026-03-25T14:51:57.880Z [DEBUG] Applied original permissions to temp file
+2026-03-25T14:51:57.880Z [DEBUG] Renaming /home/aryaniyaps/.claude.json.tmp.6349.1774450317870 to /home/aryaniyaps/.claude.json
+2026-03-25T14:51:57.881Z [DEBUG] File /home/aryaniyaps/.claude.json written atomically
