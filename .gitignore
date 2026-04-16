@@ -49,3 +49,4 @@ opencode/bin/
 .claude/backups/
 .claude/.caveman-active
 .claude/settings.json.lean-ctx.bak
+.opencode/bin/opencode

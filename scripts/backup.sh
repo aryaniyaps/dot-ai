@@ -32,8 +32,8 @@ fi
 
 # Sync OpenCode config
 if [[ -d "$OPENCODE_SRC" ]]; then
-    mkdir -p "$REPO_DIR/opencode"
-    rsync -av --delete "$OPENCODE_SRC/" "$REPO_DIR/opencode/"
+    mkdir -p "$REPO_DIR/.opencode"
+    rsync -av --delete "$OPENCODE_SRC/" "$REPO_DIR/.opencode/"
     echo "Backed up OpenCode config."
 fi
 

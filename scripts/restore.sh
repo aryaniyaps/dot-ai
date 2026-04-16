@@ -17,8 +17,8 @@ if [[ -d "$REPO_DIR/.claude" ]]; then
 fi
 
 # Restore OpenCode config
-if [[ -d "$REPO_DIR/opencode" ]]; then
+if [[ -d "$REPO_DIR/.opencode" ]]; then
     mkdir -p "$OPENCODE_DST"
-    rsync -av --delete "$REPO_DIR/opencode/" "$OPENCODE_DST/"
+    rsync -av --delete "$REPO_DIR/.opencode/" "$OPENCODE_DST/"
     echo "Restored OpenCode config."
 fi
