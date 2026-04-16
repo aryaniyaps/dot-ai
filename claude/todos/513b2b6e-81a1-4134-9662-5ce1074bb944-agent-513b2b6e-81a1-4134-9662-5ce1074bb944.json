@@ -1,7 +1,0 @@
-[
-  {
-    "content": "Fix JSX structure by moving Preview component outside Tailwind wrapper",
-    "status": "in_progress",
-    "activeForm": "Fixing JSX component structure"
-  }
-]

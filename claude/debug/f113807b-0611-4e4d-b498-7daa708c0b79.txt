@@ -1,6 +1,0 @@
-2026-04-15T07:28:10.420Z [DEBUG] Watching for changes in setting files /home/aryaniyaps/.claude/settings.json, /home/aryaniyaps/web-projects/portfolio/.claude/settings.json...
-2026-04-15T07:28:10.441Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
-2026-04-15T07:28:10.442Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
-2026-04-15T07:28:10.442Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
-2026-04-15T07:28:10.442Z [DEBUG] [LSP SERVER MANAGER] initialize() called
-2026-04-15T07:28:10.442Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
