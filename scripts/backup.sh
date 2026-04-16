@@ -46,6 +46,5 @@ else
     echo "No changes to commit."
 fi
 
-# Optional: push to remote (uncomment and set origin)
-# git remote add origin YOUR_REMOTE_URL  # first time
-# git push -u origin main
+# Push to remote
+git push

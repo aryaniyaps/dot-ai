@@ -24,6 +24,48 @@ $HOME/dot-ai
 
 ---
 
+## Prerequisites
+
+The backup and restore scripts require:
+
+- **rsync** — for syncing directories
+- **git** — for version control
+
+### Installing dependencies
+
+#### Arch Linux
+
+```bash
+sudo pacman -S rsync git
+```
+
+#### Ubuntu / Debian
+
+```bash
+sudo apt update && sudo apt install rsync git
+```
+
+#### Fedora
+
+```bash
+sudo dnf install rsync git
+```
+
+#### macOS
+
+```bash
+# rsync is pre-installed on macOS
+brew install git   # if not already installed
+```
+
+#### Windows (WSL)
+
+```bash
+sudo apt update && sudo apt install rsync git
+```
+
+---
+
 ## First-time setup (local)
 
 1. Create the repo directory:
