@@ -29,3 +29,6 @@ node_modules/
 # Optional local notes
 .local/
 private/
+
+# Large local binaries
+opencode/bin/
