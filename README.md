@@ -15,7 +15,7 @@ Everything is versioned with Git so I can sync my setup across machines like dot
 
 ```text
 $HOME/dot-ai
-├── claude/        # mirror of ~/.claude
+├── .claude/       # mirror of ~/.claude
 ├── opencode/      # mirror of ~/.opencode
 ├── backup.sh      # one-shot backup script
 └── restore.sh     # one-shot restore script
@@ -83,7 +83,7 @@ git push
 
 The script:
 
-- Copies `~/.claude` into `~/dot-ai/claude/`
+- Copies `~/.claude` into `~/dot-ai/.claude/`
 - Copies `~/.opencode` into `~/dot-ai/opencode/`
 - Commits any changes with a standard message
 
@@ -102,7 +102,7 @@ cd ~/dot-ai
 The script:
 
 - Pulls latest changes
-- Restores `claude/` → `~/.claude`
+- Restores `.claude/` → `~/.claude`
 - Restores `opencode/` → `~/.opencode`
 
 Then restart your editor / agents and you should have the same setup.

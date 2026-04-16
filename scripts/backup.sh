@@ -25,8 +25,8 @@ fi
 
 # Sync Claude config
 if [[ -d "$CLAUDE_SRC" ]]; then
-    mkdir -p "$REPO_DIR/claude"
-    rsync -av --delete "$CLAUDE_SRC/" "$REPO_DIR/claude/"
+    mkdir -p "$REPO_DIR/.claude"
+    rsync -av --delete "$CLAUDE_SRC/" "$REPO_DIR/.claude/"
     echo "Backed up Claude Code config."
 fi
 

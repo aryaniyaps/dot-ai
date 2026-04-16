@@ -10,9 +10,9 @@ cd "$REPO_DIR"
 git pull || true   # safe if no remote yet
 
 # Restore Claude config
-if [[ -d "$REPO_DIR/claude" ]]; then
+if [[ -d "$REPO_DIR/.claude" ]]; then
     mkdir -p "$CLAUDE_DST"
-    rsync -av --delete "$REPO_DIR/claude/" "$CLAUDE_DST/"
+    rsync -av --delete "$REPO_DIR/.claude/" "$CLAUDE_DST/"
     echo "Restored Claude Code config."
 fi
 
