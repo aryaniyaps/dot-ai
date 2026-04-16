@@ -1,13 +1,13 @@
 #!/bin/bash
 set -euo pipefail
 
-REPO_DIR="$HOME/dot-agents"
+REPO_DIR="$HOME/dot-ai"
 CLAUDE_DST="$HOME/.claude"
 OPENCODE_DST="$HOME/.opencode"
 
 # Ensure repo is fresh
 cd "$REPO_DIR"
-git pull
+git pull || true   # safe if no remote yet
 
 # Restore Claude config
 if [[ -d "$REPO_DIR/claude" ]]; then

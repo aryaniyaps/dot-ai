@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Paths (adjust if your ~/.opencode location differs)
-REPO_DIR="$HOME/dot-agents"
+REPO_DIR="$HOME/dot-ai"
 CLAUDE_SRC="$HOME/.claude"
 OPENCODE_SRC="$HOME/.opencode"
 
@@ -33,7 +33,7 @@ fi
 # Sync OpenCode config
 if [[ -d "$OPENCODE_SRC" ]]; then
     mkdir -p "$REPO_DIR/opencode"
-    rsync -av --delete "$OPEN.CODE_SRC/" "$REPO_DIR/opencode/"  # fix typo in your case
+    rsync -av --delete "$OPENCODE_SRC/" "$REPO_DIR/opencode/"
     echo "Backed up OpenCode config."
 fi
 
