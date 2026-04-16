@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "plugins": {
+    "caveman@caveman": {
+      "version": "unknown",
+      "installedAt": "2026-04-15T07:55:15.337Z",
+      "lastUpdated": "2026-04-15T07:55:15.337Z",
+      "installPath": "/home/aryaniyaps/.claude/plugins/marketplaces/caveman/",
+      "gitCommitSha": "63e797cd753b301374947a5ed975c21775d962b9",
+      "isLocal": true
+    },
+    "impeccable@impeccable": {
+      "version": "1.5.1",
+      "installedAt": "2026-04-15T07:55:15.337Z",
+      "lastUpdated": "2026-04-15T07:55:15.337Z",
+      "installPath": "/home/aryaniyaps/.claude/plugins/marketplaces/impeccable/",
+      "gitCommitSha": "f27ddf087644cef4b9617d13658bc3995715e05a",
+      "isLocal": true
+    },
+    "claude-mem@thedotmack": [
+      {
+        "scope": "user",
+        "installPath": "/home/aryaniyaps/.claude/plugins/cache/thedotmack/claude-mem/12.1.2",
+        "version": "12.1.2",
+        "installedAt": "2026-04-15T09:00:52.242Z",
+        "lastUpdated": "2026-04-15T09:00:52.242Z"
+      }
+    ]
+  }
+}

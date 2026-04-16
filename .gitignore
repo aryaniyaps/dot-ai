@@ -45,7 +45,7 @@ opencode/bin/
 .claude/debug/
 .claude/statsig/
 .claude/shell-snapshots/
-.claude/plugins/
+
 .claude/backups/
 .claude/.caveman-active
 .claude/settings.json.lean-ctx.bak
