@@ -45,6 +45,7 @@ opencode/bin/
 .claude/debug/
 .claude/statsig/
 .claude/shell-snapshots/
+.claude/plugins/cache/
 
 .claude/backups/
 .claude/.caveman-active
